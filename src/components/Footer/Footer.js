@@ -1,5 +1,5 @@
 import React from 'react';
-import './footer.css'
+import './Footer.css'
 
 const Footer = (props) => {
 
@@ -7,7 +7,7 @@ const Footer = (props) => {
 
     return (
         <div className="footer">
-            Copyright &copy; {date.getFullYear()} {props.author}. All Rights Reserved.
+            &copy; {date.getFullYear()} EnePro Oy. Kaikki oikeudet pidätetään.
         </div>
     );
 };
