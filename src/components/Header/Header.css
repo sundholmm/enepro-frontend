@@ -6,6 +6,9 @@
 
 .header-img-panels {
     display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
 }
 
 .header-flex-container {

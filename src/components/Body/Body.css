@@ -11,3 +11,17 @@
     max-width: 60%;
     margin: 10px;
 }
+
+.body-employees-flex-container {
+    display: flex;
+}
+
+.body-employee-imgs {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+}
+
+.body-employee-div {
+    margin-left: 20px;
+}
