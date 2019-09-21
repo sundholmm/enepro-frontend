@@ -1,36 +1,36 @@
 {
-    "body": [
-        "EnePro Oy tarjoaa kokonaisvaltaisia energiaparannusratkaisuja aina omakotitaloista isoihin liikekiinteistöihin saakka.",
-        "Tavoitteenamme on luoda jokaiseen kohteeseen räätälöidysti ratkaisu, joka johtaa energiansäästöön ja lisääntyneeseen käyttömukavuuteen.",
-        "Parannuskohteita löytyy pääsääntöisesti lämmityksen, viilennyksen, sähkölaitteiden, sekä mahdollisen kiinteistön oman energiantuotannon osalta."
-    ],
-    "services": [
-        "Aurinkovoimalat ja aurinkosähköjärjestelmät",
-        "Lämmityksen älykkäät säätöjärjestelmät",
-        "Ilmalämpöpumput",
-        "Laitteiden etäsäätö",
-        "Valaistusratkaisut",
-        "Ilmanvaihto, lämmön talteenotto, sisäilmanlaadun parantaminen",
-        "Järjestelmien ylläpito ja huollot"
-    ],
-    "employees": {
-        "albert": {
-            "firstname": "Albert",
-            "lastname": "Nordström",
-            "title": "Toimitusjohtaja",
-            "phone": "+358 40 418 9090",
-            "email": "albert.nordstrom@enepro.fi"
-        },
-        "matias": {
-            "firstname": "Matias",
-            "lastname": "Virtanen",
-            "title": "Energiatekniikan Insinööri",
-            "phone": "+358 45 209 7097",
-            "email": "matias.virtanen@enepro.fi"
-        }
-    },
-    "address": [
-        "Puusepänkaarre 15",
-        "06150 Porvoo"
-    ]
+	"body":[
+		"EnePro Oy tarjoaa kokonaisvaltaisia energiaparannusratkaisuja aina omakotitaloista isoihin liikekiinteistöihin saakka.",
+		"Tavoitteenamme on luoda jokaiseen kohteeseen räätälöidysti ratkaisu, joka johtaa energiansäästöön ja lisääntyneeseen käyttömukavuuteen.",
+		"Parannuskohteita löytyy pääsääntöisesti lämmityksen, viilennyksen, sähkölaitteiden, sekä mahdollisen kiinteistön oman energiantuotannon osalta."
+	],
+	"services":[
+		"Aurinkovoimalat ja aurinkosähköjärjestelmät",
+		"Lämmityksen älykkäät säätöjärjestelmät",
+		"Ilmalämpöpumput",
+		"Laitteiden etäsäätö",
+		"Valaistusratkaisut",
+		"Ilmanvaihto, lämmön talteenotto, sisäilmanlaadun parantaminen",
+		"Järjestelmien ylläpito ja huollot"
+	],
+	"employees":[
+		{
+			"firstname":"Albert",
+			"lastname":"Nordström",
+			"title":"Toimitusjohtaja",
+			"phone":"+358 40 418 9090",
+			"email":"albert.nordstrom@enepro.fi"
+		},
+		{
+			"firstname":"Matias",
+			"lastname":"Virtanen",
+			"title":"Energiatekniikan Insinööri",
+			"phone":"+358 45 209 7097",
+			"email":"matias.virtanen@enepro.fi"
+		}
+	],
+	"address":[
+		"Puusepänkaarre 15",
+		"06150 Porvoo"
+	]
 }

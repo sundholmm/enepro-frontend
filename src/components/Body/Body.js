@@ -12,8 +12,16 @@ const Body = (props) => {
         <li key={index}>{service}</li>
     );
 
-    const matias = data.employees.matias;
-    const albert = data.employees.albert;
+    const employees = data.employees.map((employee) => 
+        <div key={employee.firstname} className="body-employee-div">
+            <img className="body-employee-imgs" alt={employee.firstname + ' ' + employee.lastname}
+            src={process.env.PUBLIC_URL + `/${employee.firstname.toLowerCase()}.jpg`} />
+            <h2>{employee.firstname + ' ' + employee.lastname}</h2>
+            <p>{employee.title}</p>
+            <a href={`tel:${employee.phone}`}>{employee.phone}</a><br/>
+            <a href={`mailto:${employee.email}`}>{employee.email}</a>
+        </div>
+    );
 
     return (
         <div className="body">
@@ -25,22 +33,7 @@ const Body = (props) => {
                     {services}
                 </div>
                 <div className="body-employees-flex-container">
-                    <div className="body-employee-div">
-                        <img className="body-employee-imgs" alt="Matias Virtanen"
-                        src={process.env.PUBLIC_URL + '/matias.jpg'} />
-                        <h2>{matias.firstname + ' ' + matias.lastname}</h2>
-                        <p>{matias.title}</p>
-                        <p>{matias.phone}</p>
-                        <p>{matias.email}</p>
-                    </div>
-                    <div className="body-employee-div">
-                        <img className="body-employee-imgs" alt="Albert Nordström"
-                        src={process.env.PUBLIC_URL + '/albert.jpg'} />
-                        <h2>{albert.firstname + ' ' + albert.lastname}</h2>
-                        <p>{albert.title}</p>
-                        <p>{albert.phone}</p>
-                        <p>{albert.email}</p>
-                    </div>
+                    {employees}
                 </div>
             </div>
         </div>
