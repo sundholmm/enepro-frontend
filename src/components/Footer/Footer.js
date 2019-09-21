@@ -18,13 +18,13 @@ const Footer = (props) => {
                     src={process.env.PUBLIC_URL + '/mitsubishi-electric-logo.png'} />
                 </div>
                 <div>
+                    <h2>Yhteystiedot</h2>
+                    {contact}
+                </div>
+                <div>
                     <img className="footer-img" alt="Scanoffice Aurinkopartneri"
                     src={process.env.PUBLIC_URL + '/so-aurinkopartneri-logo.jpg'} />
                 </div>
-            </div>
-            <div>
-                <h2>Yhteystiedot</h2>
-                {contact}
             </div>
             <p>
                 &copy; {date.getFullYear()} EnePro Oy. Kaikki oikeudet pidätetään.

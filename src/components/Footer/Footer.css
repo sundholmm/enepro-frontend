@@ -4,8 +4,7 @@
 }
 
 .footer > p {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding: 20px 0px 20px 0px;
 }
 
 .footer-flex-container {
