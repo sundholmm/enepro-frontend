@@ -1,9 +1,14 @@
 import React from 'react';
+import data from '../../data/data.json'
 import './Footer.css'
 
 const Footer = (props) => {
 
     const date = new Date();
+
+    const contact = data.address.map((info, index) =>
+        <h3 key={index}>{info}</h3>
+    );
 
     return (
         <div className="footer">
@@ -16,6 +21,10 @@ const Footer = (props) => {
                     <img className="footer-img" alt="Scanoffice Aurinkopartneri"
                     src={process.env.PUBLIC_URL + '/so-aurinkopartneri-logo.jpg'} />
                 </div>
+            </div>
+            <div>
+                <h2>Yhteystiedot</h2>
+                {contact}
             </div>
             <p>
                 &copy; {date.getFullYear()} EnePro Oy. Kaikki oikeudet pidätetään.
