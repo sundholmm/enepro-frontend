@@ -14,7 +14,19 @@
 }
   
 .footer-img {
-    max-width: 60%;
-    max-height: 60%;
-    margin: 10px;
+    max-width: 200px;
+    pointer-events: none;
+}
+
+.footer-address {
+    padding: 0px 40px 0px 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-flex-container {
+        flex-direction: column;
+    }
+    .footer-address {
+        padding: 0;
+    }
 }

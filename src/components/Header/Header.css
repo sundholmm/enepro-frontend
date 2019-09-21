@@ -2,6 +2,7 @@
     margin: 5%;
     max-width: 10%;
     max-height: 10%;
+    pointer-events: none;
 }
 
 .header-img-panels {
@@ -9,6 +10,7 @@
     width: 100%;
     max-width: 1000px;
     height: auto;
+    pointer-events: none;
 }
 
 .header-flex-container {

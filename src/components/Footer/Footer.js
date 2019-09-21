@@ -17,7 +17,7 @@ const Footer = (props) => {
                     <img className="footer-img" alt="Mitsubishi Electric"
                     src={process.env.PUBLIC_URL + '/mitsubishi-electric-logo.png'} />
                 </div>
-                <div>
+                <div className="footer-address">
                     <h2>Yhteystiedot</h2>
                     {contact}
                 </div>
