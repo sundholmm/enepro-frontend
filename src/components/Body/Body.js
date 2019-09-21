@@ -8,7 +8,7 @@ const Body = (props) => {
         <p key={index}>{paragraph}</p>
     );
 
-    const services = data.body.map((service, index) =>
+    const services = data.services.map((service, index) =>
         <li key={index}>{service}</li>
     );
 
