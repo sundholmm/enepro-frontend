@@ -27,6 +27,6 @@
         flex-direction: column;
     }
     .footer-address {
-        padding: 0;
+        padding: 40px 0px 0px 0px;
     }
 }

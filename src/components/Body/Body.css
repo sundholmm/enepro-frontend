@@ -3,13 +3,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 130px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    background: #000000;
+    color: #FFFFFF;
 }
 
-.body-flex-container > div {
+.body-flex-container > div, .body-employees-title {
     max-width: 60%;
-    margin: 10px;
+}
+
+.body-text {
+    margin: 50px 0px 50px 0px;
+}
+
+.body-employees-title {
+    margin-top: 60px;
 }
 
 .body-employees-flex-container {
@@ -26,8 +36,13 @@
 }
 
 .body-employee-div {
-    padding: 50px;
+    padding: 10px 50px 50px 50px;
     white-space: nowrap;
+}
+
+.body-employee-div > a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {

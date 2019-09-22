@@ -1,15 +1,16 @@
-.header-img-logo {
-    margin: 5%;
-    max-width: 10%;
-    max-height: 10%;
-    pointer-events: none;
+.header-img-logo-wrapper {
+    clip-path: polygon(0 0, 100% 0, 100% 15%, 50% 30%, 0 15%);
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 400px;
 }
 
-.header-img-panels {
+.header-img-logo {
     display: block;
-    width: 100%;
-    max-width: 1000px;
-    height: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
     pointer-events: none;
 }
 
