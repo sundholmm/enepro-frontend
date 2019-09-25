@@ -18,8 +18,9 @@
     pointer-events: none;
 }
 
-.footer-address {
-    padding: 0px 40px 0px 40px;
+.footer-img-middle {
+    width: 100px;
+    padding: 50px;    
 }
 
 @media only screen and (max-width: 768px) {
@@ -28,5 +29,8 @@
     }
     .footer-address {
         padding: 40px 0px 0px 0px;
+    }
+    .footer-img-middle {
+        padding: 50px 50px 10px 50px;
     }
 }

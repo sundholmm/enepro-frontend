@@ -17,14 +17,17 @@ const Footer = (props) => {
                     <img className="footer-img" alt="Mitsubishi Electric"
                     src={process.env.PUBLIC_URL + '/mitsubishi-electric-logo.png'} />
                 </div>
-                <div className="footer-address">
-                    <h2>Yhteystiedot</h2>
-                    {contact}
+                <div>
+                    <img className="footer-img footer-img-middle" alt="Luottoluokitus AA"
+                    src={process.env.PUBLIC_URL + '/luottoluokitus.jpg'} />
                 </div>
                 <div>
                     <img className="footer-img" alt="Scanoffice Aurinkopartneri"
                     src={process.env.PUBLIC_URL + '/so-aurinkopartneri-logo.jpg'} />
                 </div>
+            </div>
+            <div className="footer-address">
+                {contact}
             </div>
             <p>
                 &copy; {date.getFullYear()} EnePro Oy. Kaikki oikeudet pidätetään.

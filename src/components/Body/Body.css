@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 130px;
     padding-bottom: 50px;
     margin-bottom: 50px;
     background: #000000;
@@ -16,6 +15,10 @@
 
 .body-text {
     margin: 50px 0px 50px 0px;
+}
+
+.body-text > li {
+    padding: 5px;
 }
 
 .body-employees-title {

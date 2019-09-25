@@ -10,8 +10,6 @@ const Header = (props) => {
                     <img className="header-img-logo" alt="EnePro Oy"
                     src={process.env.PUBLIC_URL + '/logo.png'} />
                 </div>
-                <div className="header-img-panels">
-                </div>
             </div>
         </div>
     );

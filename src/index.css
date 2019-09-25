@@ -2,10 +2,6 @@
 
 body {
   margin: 0;
-  background-image: url("/paneelikuva.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
   font-family: 'Noto Sans', sans-serif;
   -webkit-touch-callout: none;
     -webkit-user-select: none;

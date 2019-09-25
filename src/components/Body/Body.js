@@ -14,7 +14,7 @@ const Body = (props) => {
 
     const employees = data.employees.map((employee) => {
         const phone = employee.phone.replace(/\s/g, '');
-        const email = (employee.firstname + '.' + employee.lastname + employee.email).toLowerCase();
+        const email = (employee.firstname + '.' + employee.lastname.replace("ö", "o") + employee.email).toLowerCase();
         return <div key={employee.firstname} className="body-employee-div">
             <img className="body-employee-imgs" alt={employee.firstname + ' ' + employee.lastname}
             src={process.env.PUBLIC_URL + `/${employee.firstname.toLowerCase()}.jpg`} />
