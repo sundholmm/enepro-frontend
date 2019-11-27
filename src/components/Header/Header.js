@@ -4,10 +4,10 @@ import "./Header.css";
 
 const Header = props => {
   const title = data.company.map((info, index) => (
-    <>
-      <h1 key={index}>{info.name}</h1>
-      <h2 key={index++}>{info.slogan}</h2>
-    </>
+    <React.Fragment key={index}>
+      <h1>{info.name}</h1>
+      <h2>{info.slogan}</h2>
+    </React.Fragment>
   ));
 
   return (
