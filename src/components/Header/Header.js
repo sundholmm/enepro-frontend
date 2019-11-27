@@ -1,7 +1,15 @@
 import React from "react";
+import data from "../../data/data.json";
 import "./Header.css";
 
 const Header = props => {
+  const title = data.company.map((info, index) => (
+    <>
+      <h1 key={index}>{info.name}</h1>
+      <h2 key={index++}>{info.slogan}</h2>
+    </>
+  ));
+
   return (
     <div className="header">
       <div className="header-flex-container">
@@ -13,10 +21,7 @@ const Header = props => {
               alt="EnePro Oy"
               src={process.env.PUBLIC_URL + "/logo.png"}
             />
-            <div className="header-title-centered">
-              <h1>EnePro Oy</h1>
-              <h2>Nykyaikaiset energiaratkaisut ammattitaidolla</h2>
-            </div>
+            <div className="header-title-centered">{title}</div>
           </div>
         </div>
       </div>
