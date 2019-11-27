@@ -4,6 +4,9 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 .header-img-logo-wrapper {
@@ -25,4 +28,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.header-title-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
 }
