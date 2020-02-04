@@ -16,6 +16,7 @@ const Footer = props => {
           <a
             href="https://www.scanoffice.fi/tuoteryhma/ilmalampopumput/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               className="footer-img"
@@ -29,6 +30,7 @@ const Footer = props => {
           <a
             href="https://www.asiakastieto.fi/yritykset/fi/enepro-oy/30029787/yleiskuva"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               className="footer-img footer-img-middle"
@@ -42,6 +44,7 @@ const Footer = props => {
           <a
             href="https://www.scanoffice.fi/tuoteryhma/aurinkosahkojarjestelmat/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               className="footer-img"
