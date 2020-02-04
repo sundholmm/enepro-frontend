@@ -1,5 +1,6 @@
 import React from "react";
 import data from "../../data/data.json";
+import Contact from "../Contact/Contact";
 import "./Body.css";
 
 const Body = props => {
@@ -51,6 +52,7 @@ const Body = props => {
         </div>
         <h2 className="body-employees-title">Tekijät</h2>
         <div className="body-employees-flex-container">{employees}</div>
+        <Contact />
       </div>
     </div>
   );
