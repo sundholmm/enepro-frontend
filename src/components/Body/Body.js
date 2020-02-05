@@ -52,8 +52,8 @@ const Body = props => {
         </div>
         <h2 className="body-employees-title">Tekijät</h2>
         <div className="body-employees-flex-container">{employees}</div>
-        <Contact />
       </div>
+      <Contact title={data.contactFormTitle} />
     </div>
   );
 };
