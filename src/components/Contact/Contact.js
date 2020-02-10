@@ -5,20 +5,29 @@ import "./Contact.css";
 const Contact = props => {
   const CustomForm = ({ status, message, onValidated }) => {
     let email;
+    let number;
     const submit = () =>
       email &&
       email.value.indexOf("@") > -1 &&
       onValidated({
-        EMAIL: email.value
+        EMAIL: email.value,
+        PHONE: number.value ? number.value : ""
       });
 
     return (
       <div className="contact-form-inner-wrapper">
         <input
-          className="contact-form-input"
+          className="contact-form-input-email"
           ref={node => (email = node)}
           type="email"
           placeholder="Sähköposti"
+          required
+        />
+        <input
+          className="contact-form-input-number"
+          ref={node => (number = node)}
+          type="tel"
+          placeholder="Puhelinnumero"
         />
         <button className="contact-form-button" onClick={submit}>
           Lähetä
