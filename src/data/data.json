@@ -36,6 +36,9 @@
       "email": "@enepro.fi"
     }
   ],
-  "contactFormTitle": "Jätä yhteystietosi tarjousta tai ilmaista arviota varten!",
+  "contactFormTitle": [
+    "Jätä yhteystietosi tarjousta tai ilmaista arviota varten!",
+    "Ette sitoudu mihinkään, emmekä lähetä teille tarjouksen lisäksi muita viestejä."
+  ],
   "address": ["Y-tunnus: 3002978-7", "Puusepänkaarre 15", "06150 Porvoo"]
 }

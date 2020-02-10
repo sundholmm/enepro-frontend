@@ -27,7 +27,7 @@ const Contact = props => {
           className="contact-form-input-number"
           ref={node => (number = node)}
           type="tel"
-          placeholder="Puhelinnumero"
+          placeholder="Puhelinnumero (vapaaehtoinen)"
         />
         <button className="contact-form-button" onClick={submit}>
           Lähetä
@@ -62,7 +62,8 @@ const Contact = props => {
   return (
     <div className="contact-form-wrapper">
       <div className="contact-form-title-wrapper">
-        <h2 className="contact-form-title">{props.title}</h2>
+        <h2 className="contact-form-title">{props.title[0]}</h2>
+        <h3 className="contact-form-title">{props.title[1]}</h3>
       </div>
       <div className="contact-form">
         <MailchimpSubscribe
