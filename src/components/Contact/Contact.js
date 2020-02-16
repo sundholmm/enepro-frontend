@@ -20,7 +20,7 @@ const Contact = props => {
           className="contact-form-input-email"
           ref={node => (email = node)}
           type="email"
-          placeholder="Sähköposti"
+          placeholder="Sähköposti (pakollinen)"
           required
         />
         <input
