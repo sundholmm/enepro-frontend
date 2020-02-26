@@ -1,7 +1,7 @@
 .contact-form-wrapper {
   background-color: #00019f;
   width: 100%;
-  height: 450px;
+  height: 475px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,6 +66,23 @@ textarea {
   border: 2px solid #ccc;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.contact-form-status-wrapper {
+  height: 10px;
+}
+
+.contact-form-status-value-success,
+.contact-form-status-value-error {
+  text-align: center;
+}
+
+.contact-form-status-value-success {
+  color: green;
+}
+
+.contact-form-status-value-error {
+  color: red;
 }
 
 .contact-form {
