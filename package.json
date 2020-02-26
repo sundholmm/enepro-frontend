@@ -1,5 +1,9 @@
 {
-  "name": "enepro-website",
+  "name": "enepro-frontend",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sundholmm/enepro-frontend.git"
+  },
   "version": "1.1.0",
   "private": true,
   "dependencies": {
