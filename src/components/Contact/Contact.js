@@ -1,64 +1,16 @@
-import React from "react";
-import MailchimpSubscribe from "react-mailchimp-subscribe";
+import React, { useState } from "react";
 import "./Contact.css";
 
 const Contact = props => {
-  const CustomForm = ({ status, message, onValidated }) => {
-    let email;
-    let number;
-    const submit = () =>
-      email &&
-      email.value.indexOf("@") > -1 &&
-      onValidated({
-        EMAIL: email.value,
-        PHONE: number.value ? number.value : ""
-      });
+  const [emailValue, setEmailValue] = useState("");
+  const [phoneValue, setPhoneValue] = useState("");
+  const [textValue, setTextValue] = useState("");
 
-    return (
-      <div className="contact-form-inner-wrapper">
-        <input
-          className="contact-form-input-email"
-          ref={node => (email = node)}
-          type="email"
-          placeholder="Sähköposti (pakollinen)"
-          required
-        />
-        <input
-          className="contact-form-input-number"
-          ref={node => (number = node)}
-          type="tel"
-          placeholder="Puhelinnumero (vapaaehtoinen)"
-        />
-        <button className="contact-form-button" onClick={submit}>
-          Lähetä
-        </button>
-        <div className="contact-form-status-message-wrapper">
-          {status === "sending" && (
-            <div className="contact-form-status-message">Lähetetään...</div>
-          )}
-          {status === "error" &&
-            (console.warn(message),
-            (
-              <div className="contact-form-status-message">
-                Lähetys epäonnistui!
-              </div>
-            ))}
-          {status === "success" && (
-            <div className="contact-form-status-message">
-              Lähetetty onnistuneesti!
-            </div>
-          )}
-        </div>
-      </div>
-    );
+  const onSubmitHandler = event => {
+    event.preventDefault();
+    console.log(emailValue, phoneValue, textValue);
   };
 
-  const url =
-    process.env.NODE_ENV === "development"
-      ? process.env.REACT_APP_DEVELOPMENT_URL
-      : process.env.NODE_ENV === "production"
-      ? process.env.REACT_APP_PRODUCTION_URL
-      : process.env.REACT_APP_TEST_URL;
   return (
     <div className="contact-form-wrapper">
       <div className="contact-form-title-wrapper">
@@ -66,16 +18,28 @@ const Contact = props => {
         <h3 className="contact-form-title">{props.title[1]}</h3>
       </div>
       <div className="contact-form">
-        <MailchimpSubscribe
-          url={url}
-          render={({ subscribe, status, message }) => (
-            <CustomForm
-              status={status}
-              message={message}
-              onValidated={formData => subscribe(formData)}
+        <form onSubmit={onSubmitHandler}>
+          <div className="contact-form-inner-wrapper">
+            <textarea
+              className="contact-form-input-text"
+              placeholder="Kerro lyhyesti yhteydenottosi aiheesta"
+              onChange={event => setTextValue(event.target.value)}
+            ></textarea>
+            <input
+              className="contact-form-input-email"
+              type="email"
+              placeholder="Sähköposti"
+              onChange={event => setEmailValue(event.target.value)}
             />
-          )}
-        />
+            <input
+              className="contact-form-input-number"
+              type="tel"
+              placeholder="Puhelinnumero"
+              onChange={event => setPhoneValue(event.target.value)}
+            />
+            <button className="contact-form-button">Lähetä</button>
+          </div>
+        </form>
       </div>
     </div>
   );

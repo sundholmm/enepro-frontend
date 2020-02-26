@@ -42,6 +42,21 @@
   margin-bottom: 20px;
 }
 
+.contact-form-input-text {
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  padding: 10px;
+  resize: none;
+  width: 40vw;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
+
 .contact-form-button {
   outline: none;
   color: #000000;
@@ -53,23 +68,21 @@
   cursor: pointer;
 }
 
-.contact-form-status-message-wrapper {
-  height: 20px;
-}
-
-.contact-form-status-message {
-  color: #ffffff;
-}
-
 .contact-form {
   padding: 20px;
 }
 
 @media only screen and (max-width: 768px) {
+  .contact-form-wrapper {
+    height: 500px;
+  }
   .contact-form-input-email {
     width: 80vw;
   }
   .contact-form-input-number {
+    width: 70vw;
+  }
+  .contact-form-input-text {
     width: 70vw;
   }
 }
