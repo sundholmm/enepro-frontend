@@ -31,12 +31,12 @@ const Contact = props => {
           phone: phoneValue,
           text: textValue
         })
-        .then(function(response) {
+        .then(response => {
           clearValues();
           setStatusValue("success");
           console.log(response);
         })
-        .catch(function(error) {
+        .catch(error => {
           clearValues();
           setStatusValue("error");
           console.error(error);
@@ -57,19 +57,20 @@ const Contact = props => {
           <div className="contact-form-inner-wrapper">
             <textarea
               className="contact-form-input-text"
-              placeholder="Kerro lyhyesti yhteydenottosi aiheesta"
+              placeholder="Kerro lyhyesti yhteydenottosi aiheesta (vapaaehtoinen)"
               onChange={event => setTextValue(event.target.value)}
             ></textarea>
             <input
               className="contact-form-input-email"
               type="email"
-              placeholder="Sähköposti"
+              placeholder="Sähköposti (pakollinen)"
               onChange={event => setEmailValue(event.target.value)}
+              required
             />
             <input
               className="contact-form-input-number"
               type="tel"
-              placeholder="Puhelinnumero"
+              placeholder="Puhelinnumero (vapaaehtoinen)"
               onChange={event => setPhoneValue(event.target.value)}
             />
             <button className="contact-form-button">Lähetä</button>
