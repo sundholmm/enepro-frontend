@@ -38,3 +38,24 @@
   padding: 30px;
   background-color: rgba(0, 0, 0, 0.7);
 }
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(255, 255, 255, 0);
+  }
+}
+
+.header-scroll-button {
+  animation: shadow-pulse 3s infinite;
+  outline: none;
+  color: #000000;
+  font-weight: bold;
+  padding: 14px 25px;
+  margin: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}

@@ -46,7 +46,7 @@ const Body = props => {
           <h2>Yritys</h2>
           {bodyText}
         </div>
-        <div className="body-text">
+        <div className="body-text" id="body-services">
           <h2>Palvelumme</h2>
           {services}
         </div>

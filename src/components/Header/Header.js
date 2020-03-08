@@ -10,6 +10,15 @@ const Header = props => {
     </React.Fragment>
   ));
 
+  const scrollToElement = () => {
+    const element = document.getElementById("body-services");
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+      inline: "center"
+    });
+  };
+
   return (
     <div className="header">
       <div className="header-flex-container">
@@ -21,7 +30,15 @@ const Header = props => {
               alt="EnePro Oy"
               src={process.env.PUBLIC_URL + "/logo.png"}
             />
-            <div className="header-title-centered">{title}</div>
+            <div className="header-title-centered">
+              {title}
+              <button
+                className="header-scroll-button"
+                onClick={scrollToElement}
+              >
+                Palveluihin
+              </button>
+            </div>
           </div>
         </div>
       </div>
