@@ -11,14 +11,44 @@
     "Parannuskohteita löytyy pääsääntöisesti lämmityksen, viilennyksen, sähkölaitteiden, sekä mahdollisen kiinteistön oman energiantuotannon osalta."
   ],
   "services": [
-    "Aurinkovoimalat ja aurinkosähköjärjestelmät",
-    "Lämmityksen älykkäät säätöjärjestelmät",
-    "Ilmalämpöpumput",
-    "Laitteiden etäsäätö",
-    "Valaistusratkaisut",
-    "Ilmanvaihto, lämmön talteenotto, sisäilmanlaadun parantaminen",
-    "Järjestelmien ylläpito ja huollot",
-    "Energiakatselmukset"
+    {
+      "title": "Aurinkovoimalat ja aurinkosähköjärjestelmät",
+      "path": "aurinkosahkojarjestelmat",
+      "text": [
+        "Toimitamme avaimet käteen pakettina aurinkosähköjärjestelmän kohteeseen kuin kohteeseen. Toimimme Scanoffice Oy:n aurinkopartnerina.",
+        "Scanoffice Aurinkopartneri on luotettava aurinkosähköalan toimija, jolta saa Pohjoismaiden olosuhteisiin suunnitellut aurinkovoimalat vaivattomasti avaimet käteen periaatteella. Vuodesta 1984 toiminut suomalainen Scanoffice Oy toimii tuotteiden maahantuojana, joka takaa toimivan jälkimarkkinointipalvelun vuosiksi eteenpäin. (Scanoffice Oy 2020)",
+        "Aurinkopaneelijärjestelmien suunnittelussa tärkeintä on kartoittaa kiinteistön kulutuskohteet, joiden mukaan voidaan mitoittaa oikean kokoinen järjestelmä.",
+        "Teemme myös yhteistyössä Porvoolaisen X-Glass:in kanssa off-grid järjestelmiä, joita voi asentaa esimerkiksi katetun terassin yhteyteen. Näin terassin valaistus ja muut piensähköntarpeet saadaan katettua ilman verkkoonliittämistarvetta. Näin ollen vältytään sähkötöiden aiheuttamilta kustannuksilta ja esimerkiksi valaisimien vaihdon voi suorittaa itse."
+      ]
+    },
+    {
+      "title": "Lämmityksen älykkäät säätöjärjestelmät",
+      "path": "saatojarjestelmat"
+    },
+    {
+      "title": "Ilmalämpöpumput",
+      "path": "Ilmalampopumput"
+    },
+    {
+      "title": "Laitteiden etäsäätö",
+      "path": "etasaato"
+    },
+    {
+      "title": "Valaistusratkaisut",
+      "path": "valaistusratkaisut"
+    },
+    {
+      "title": "Ilmanvaihto, lämmön talteenotto, sisäilmanlaadun parantaminen",
+      "path": "sisailmanlaatu"
+    },
+    {
+      "title": "Järjestelmien ylläpito ja huollot",
+      "path": "yllapito"
+    },
+    {
+      "title": "Energiakatselmukset",
+      "path": "energiakatselmukset"
+    }
   ],
   "employees": [
     {
