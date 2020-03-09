@@ -1,5 +1,6 @@
 import React from "react";
 import data from "../../data/data.json";
+import HeaderLogo from "./HeaderLogo";
 import "./Header.css";
 
 const Header = props => {
@@ -23,23 +24,11 @@ const Header = props => {
     <div className="header">
       <div className="header-flex-container">
         <div className="header-img-logo-wrapper">
-          <div className="header-img-wrapper">
-            <img
-              className="header-img-logo"
-              draggable="false"
-              alt="EnePro Oy"
-              src={process.env.PUBLIC_URL + "/logo.png"}
-            />
-            <div className="header-title-centered">
-              {title}
-              <button
-                className="header-scroll-button"
-                onClick={scrollToElement}
-              >
-                Palveluihin
-              </button>
-            </div>
-          </div>
+          <HeaderLogo
+            includeTitleAndButton={true}
+            title={title}
+            scrollToElement={scrollToElement}
+          />
         </div>
       </div>
     </div>
