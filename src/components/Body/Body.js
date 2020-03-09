@@ -1,6 +1,7 @@
 import React from "react";
 import data from "../../data/data.json";
 import Contact from "../Contact/Contact";
+import { Link } from "react-router-dom";
 import "./Body.css";
 
 const Body = props => {
@@ -9,7 +10,9 @@ const Body = props => {
   ));
 
   const services = data.services.map((service, index) => (
-    <li key={index}>{service}</li>
+    <li key={index}>
+      <Link to={`/${service.path}`}>{service.title}</Link>
+    </li>
   ));
 
   const employees = data.employees.map(employee => {
