@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import data from "../../data/data.json";
 import Header from "../Header/Header";
 import Body from "../Body/Body";
@@ -16,15 +16,17 @@ const App = () => {
   return (
     <div className="App">
       <Router>
-        <Route exact path={"/"}>
-          <Header />
-          <Body />
-          <Footer />
-        </Route>
-        {routes}
-        <Route path="*">
-          <SingleService service={data.noMatch} />
-        </Route>
+        <Switch>
+          <Route exact path={"/"}>
+            <Header />
+            <Body />
+            <Footer />
+          </Route>
+          {routes}
+          <Route path="*">
+            <SingleService service={data.noMatch} />
+          </Route>
+        </Switch>
       </Router>
     </div>
   );
