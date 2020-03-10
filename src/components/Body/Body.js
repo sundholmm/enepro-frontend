@@ -11,7 +11,13 @@ const Body = props => {
 
   const services = data.services.map((service, index) => (
     <li key={index}>
-      <Link to={`/${service.path}`}>{service.title}</Link>
+      <img
+        className="body-service-icon"
+        src={process.env.PUBLIC_URL + `/serviceicon.svg`}
+      />
+      <Link className="body-single-service-link" to={`/${service.path}`}>
+        {service.title}
+      </Link>
     </li>
   ));
 

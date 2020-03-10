@@ -19,6 +19,24 @@
 
 .body-text > li {
   padding: 5px;
+  list-style-type: none;
+  transition: transform 0.2s;
+}
+
+.body-text > li:hover {
+  color: whitesmoke;
+  transform: scale(1.1);
+}
+
+.body-service-icon {
+  vertical-align: middle;
+  padding: 5px 10px;
+  width: 25px;
+}
+
+.body-single-service-link {
+  text-decoration: none;
+  color: white;
 }
 
 .body-employees-title {
