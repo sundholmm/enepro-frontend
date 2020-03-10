@@ -50,6 +50,10 @@
       "path": "energiakatselmukset"
     }
   ],
+  "noMatch": {
+    "title": "Sivua ei löytynyt",
+    "text": ["Pahoittelut! Palaa takaisin etusivulle."]
+  },
   "employees": [
     {
       "firstname": "Albert",

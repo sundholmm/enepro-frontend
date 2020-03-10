@@ -22,6 +22,9 @@ const App = () => {
           <Footer />
         </Route>
         {routes}
+        <Route path="*">
+          <SingleService service={data.noMatch} />
+        </Route>
       </Router>
     </div>
   );
