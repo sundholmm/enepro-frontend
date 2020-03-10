@@ -5,6 +5,7 @@ import Header from "../Header/Header";
 import Body from "../Body/Body";
 import Footer from "../Footer/Footer";
 import SingleService from "../SingleService/SingleService";
+import ScrollToTop from "./ScrollToTop";
 import "./App.css";
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Switch>
           <Route exact path={"/"}>
             <Header />
