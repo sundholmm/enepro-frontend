@@ -9,11 +9,12 @@ const Body = props => {
     <p key={index}>{paragraph}</p>
   ));
 
-  const services = data.services.map((service, index) => (
+  const servicesWithContent = data.services.map((service, index) => (
     <>
-      {service.text ? (
+      {service.text && (
         <li className="body-single-service-with-content" key={index}>
           <img
+            alt="Jakoavainkuvake listan palvelulle"
             className="body-service-icon"
             src={process.env.PUBLIC_URL + `/serviceicon.svg`}
           />
@@ -21,8 +22,16 @@ const Body = props => {
             {service.title}
           </Link>
         </li>
-      ) : (
-        <li className="body-single-service-without-content">{service.title}</li>
+      )}
+    </>
+  ));
+
+  const servicesWithNoContent = data.services.map((service, index) => (
+    <>
+      {!service.text && (
+        <li className="body-single-service-without-content" key={index}>
+          {service.title}
+        </li>
       )}
     </>
   ));
@@ -63,7 +72,13 @@ const Body = props => {
         </div>
         <div className="body-text" id="body-services">
           <h2>Palvelumme</h2>
-          {services}
+          {servicesWithContent}
+          {servicesWithNoContent.length > 0 && (
+            <>
+              <h2 className="body-additional-services-title">Lisäksi</h2>
+              {servicesWithNoContent}
+            </>
+          )}
         </div>
         <h2 className="body-employees-title">Tekijät</h2>
         <div className="body-employees-flex-container">{employees}</div>

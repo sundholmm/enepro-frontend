@@ -23,18 +23,18 @@
   transition: transform 0.2s;
 }
 
+.body-additional-services-title {
+  margin-top: 50px;
+}
+
 .body-single-service-with-content:hover {
   color: whitesmoke;
   transform: scale(1.1);
 }
 
-.body-single-service-without-content {
-  padding-left: 55px !important;
-}
-
 .body-service-icon {
   vertical-align: middle;
-  padding: 5px 10px;
+  padding-right: 10px;
   width: 25px;
 }
 
