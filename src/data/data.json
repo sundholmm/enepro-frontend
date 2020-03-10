@@ -23,11 +23,23 @@
     },
     {
       "title": "Lämmityksen älykkäät säätöjärjestelmät",
-      "path": "saatojarjestelmat"
+      "path": "saatojarjestelmat",
+      "text": [
+        "Lämmityslaitteiston vaihtaminen kokonaan uuteen ei useinkaan ole kannattavin vaihtoehto. Sen sijaan jo olemassa olevan laitteiston säädön nykyaikaistamisella saavutetaan tuntuvia säästöjä. Tämä pätee etenkin kiinteistöissä, joissa on käytössä monta eri lämmitysmuotoa esim. takka, suora sähkölämmitys ja ilmalämpöpumppu. Älykkäillä säätöjärjestelmillä saadaan kaikki laitteistot toimimaan synkronoidusti, jolloin pystytään hyödyntämään mahdollisimman hyvin jokaisen lämmitysmuodon parhaat puolet.",
+        "Vaikka älytermostaatit sisältävät paljon erilaisia ominaisuuksia, ei niiden käyttö ole kuitenkaan sen monimutkaisempaa kuin vanhanaikaistenkaan termostaattien."
+      ]
     },
     {
       "title": "Ilmalämpöpumput",
-      "path": "Ilmalampopumput"
+      "path": "Ilmalampopumput",
+      "text": [
+        "Meiltä saat markkinoiden parhaat ilmalämpöpumput laadukkaasti ja ammattitaitoisesti asennettuna.",
+        "Suunnittelemme aina parhaan mahdollisen ilmalämpöpumppuratkaisun kohteen vaatimukset huomioon ottaen. Näin taataan maksimoitu energiansäästö ja käyttömukavuus.",
+        "Palveluihimme kuuluu myös ilmalämpöpumppujen huolto.",
+        "Ilmalämpöpumpun huoltaminen on tärkeää sen lämmitystehon ja hyötysuhteen säilyttämisen kannalta. Myös laitteen elinikä kasvaa huomattavasti.",
+        "Huollossa puhdistamme sisä-, sekä ulkoyksikön ja desinfioimme sisäyksikön raikkaamman huoneilman takaamiseksi. Mittaamme laitteen kylmäaineen painetasot ja näin varmistetaan kylmäaineen riittävyys. Tarkastamme sähköliitännät sekä kondenssiveden poiston toimivuuden.",
+        "Ilmalämpöpumppuasennukset, sekä huollot Etelä-Suomen alueella: Porvoo, Helsinki, Vantaa. Myös muu suomi sopimuksen mukaan."
+      ]
     },
     {
       "title": "Laitteiden etäsäätö",
