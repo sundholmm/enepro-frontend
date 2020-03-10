@@ -10,15 +10,21 @@ const Body = props => {
   ));
 
   const services = data.services.map((service, index) => (
-    <li key={index}>
-      <img
-        className="body-service-icon"
-        src={process.env.PUBLIC_URL + `/serviceicon.svg`}
-      />
-      <Link className="body-single-service-link" to={`/${service.path}`}>
-        {service.title}
-      </Link>
-    </li>
+    <>
+      {service.text ? (
+        <li className="body-single-service-with-content" key={index}>
+          <img
+            className="body-service-icon"
+            src={process.env.PUBLIC_URL + `/serviceicon.svg`}
+          />
+          <Link className="body-single-service-link" to={`/${service.path}`}>
+            {service.title}
+          </Link>
+        </li>
+      ) : (
+        <li className="body-single-service-without-content">{service.title}</li>
+      )}
+    </>
   ));
 
   const employees = data.employees.map(employee => {
