@@ -2,6 +2,8 @@ import React from "react";
 import data from "../../data/data.json";
 import Contact from "../Contact/Contact";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import "./Body.css";
 
 const Body = props => {
@@ -13,11 +15,7 @@ const Body = props => {
     <>
       {service.text && (
         <li className="body-single-service-with-content" key={index}>
-          <img
-            alt="Jakoavainkuvake listan palvelulle"
-            className="body-service-icon"
-            src={process.env.PUBLIC_URL + `/serviceicon.svg`}
-          />
+          <FontAwesomeIcon icon={faArrowRight} />
           <Link className="body-single-service-link" to={`/${service.path}`}>
             {service.title}
           </Link>
