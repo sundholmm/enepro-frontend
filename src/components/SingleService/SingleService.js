@@ -6,7 +6,7 @@ import "./SingleService.css";
 
 const SingleService = props => {
   const {
-    service: { title, text }
+    service: { title, text, image }
   } = props;
 
   const singleServiceText = text.map((paragraph, index) => (
@@ -18,11 +18,18 @@ const SingleService = props => {
       <HeaderLogo includeTitleAndButton={false} />
       <div className="single-service-body">
         <div className="single-service-inner-body">
+        {image && <div className="single-service-inner-body-header-wrapper">
+            <img className="single-service-inner-body-header" src={process.env.PUBLIC_URL + `/${image}`}/>
+          </div>}
+          <div className="single-service-inner-body-text-wrapper">
+          <div className="single-service-inner-body-text">
           <h2>{title}</h2>
           {singleServiceText}
           <Link className="single-service-home-link" to={"/"}>
-            <p>Palaa takaisin etusivulle.</p>
+            <p>Palaa takaisin etusivulle</p>
           </Link>
+          </div>
+          </div>
         </div>
       </div>
       <Footer />

@@ -19,7 +19,8 @@
         "Scanoffice Aurinkopartneri on luotettava aurinkosähköalan toimija, jolta saa Pohjoismaiden olosuhteisiin suunnitellut aurinkovoimalat vaivattomasti avaimet käteen periaatteella. Vuodesta 1984 toiminut suomalainen Scanoffice Oy toimii tuotteiden maahantuojana, joka takaa toimivan jälkimarkkinointipalvelun vuosiksi eteenpäin. (Scanoffice Oy 2020)",
         "Aurinkopaneelijärjestelmien suunnittelussa tärkeintä on kartoittaa kiinteistön kulutuskohteet, joiden mukaan voidaan mitoittaa oikean kokoinen järjestelmä.",
         "Teemme myös yhteistyössä Porvoolaisen X-Glass:in kanssa off-grid järjestelmiä, joita voi asentaa esimerkiksi katetun terassin yhteyteen. Näin terassin valaistus ja muut piensähköntarpeet saadaan katettua ilman verkkoonliittämistarvetta. Näin ollen vältytään sähkötöiden aiheuttamilta kustannuksilta ja esimerkiksi valaisimien vaihdon voi suorittaa itse."
-      ]
+      ],
+      "image": "paneeleita_taivaalla.jpg"
     },
     {
       "title": "Lämmityksen älykkäät säätöjärjestelmät",
@@ -27,7 +28,8 @@
       "text": [
         "Lämmityslaitteiston vaihtaminen kokonaan uuteen ei useinkaan ole kannattavin vaihtoehto. Sen sijaan jo olemassa olevan laitteiston säädön nykyaikaistamisella saavutetaan tuntuvia säästöjä. Tämä pätee etenkin kiinteistöissä, joissa on käytössä monta eri lämmitysmuotoa esim. takka, suora sähkölämmitys ja ilmalämpöpumppu. Älykkäillä säätöjärjestelmillä saadaan kaikki laitteistot toimimaan synkronoidusti, jolloin pystytään hyödyntämään mahdollisimman hyvin jokaisen lämmitysmuodon parhaat puolet.",
         "Vaikka älytermostaatit sisältävät paljon erilaisia ominaisuuksia, ei niiden käyttö ole kuitenkaan sen monimutkaisempaa kuin vanhanaikaistenkaan termostaattien."
-      ]
+      ],
+      "image": "raha_ja_laskin.jpg"
     },
     {
       "title": "Ilmalämpöpumput",
@@ -39,7 +41,8 @@
         "Ilmalämpöpumpun huoltaminen on tärkeää sen lämmitystehon ja hyötysuhteen säilyttämisen kannalta. Myös laitteen elinikä kasvaa huomattavasti.",
         "Huollossa puhdistamme sisä-, sekä ulkoyksikön ja desinfioimme sisäyksikön raikkaamman huoneilman takaamiseksi. Mittaamme laitteen kylmäaineen painetasot ja näin varmistetaan kylmäaineen riittävyys. Tarkastamme sähköliitännät sekä kondenssiveden poiston toimivuuden.",
         "Ilmalämpöpumppuasennukset, sekä huollot Etelä-Suomen alueella: Porvoo, Helsinki, Vantaa. Myös muu suomi sopimuksen mukaan."
-      ]
+      ],
+      "image": "2LN35.png"
     },
     {
       "title": "Laitteiden etäsäätö",

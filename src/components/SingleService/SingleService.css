@@ -15,6 +15,23 @@
   padding: 30px;
 }
 
+.single-service-inner-body-header-wrapper, .single-service-inner-body-text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.single-service-inner-body-header {
+  padding: 50px;
+  max-width: 50vw;
+}
+
+.single-service-inner-body-text {
+  /* padding: 50px; */
+  line-height: 1.6;
+  width: 50vw;
+}
+
 .single-service-home-link {
   color: white;
 }
