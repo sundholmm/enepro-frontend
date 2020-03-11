@@ -5,12 +5,13 @@ import Header from "../Header/Header";
 import Body from "../Body/Body";
 import Footer from "../Footer/Footer";
 import SingleService from "../SingleService/SingleService";
+import NoMatch from "../NoMatch/NoMatch"
 import ScrollToTop from "./ScrollToTop";
 import "./App.css";
 
 const App = () => {
   const routes = data.services.map((service, index) => (
-    <Route key={index} path={`/${service.path}`}>
+    <Route exact key={index} path={`/${service.path}`}>
       <SingleService service={service} />
     </Route>
   ));
@@ -26,7 +27,7 @@ const App = () => {
           </Route>
           {routes}
           <Route path="*">
-            <SingleService service={data.noMatch} />
+            <NoMatch noMatch={data.noMatch} />
           </Route>
         </Switch>
       </Router>
