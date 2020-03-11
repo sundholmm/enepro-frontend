@@ -19,7 +19,7 @@ const SingleService = props => {
       <div className="single-service-body">
         <div className="single-service-inner-body">
         {image && <div className="single-service-inner-body-header-wrapper">
-            <img className="single-service-inner-body-header" src={process.env.PUBLIC_URL + `/${image}`}/>
+            <img className="single-service-inner-body-header" alt="Palvelua kuvaava kuva" src={process.env.PUBLIC_URL + `/${image}`}/>
           </div>}
           <div className="single-service-inner-body-text-wrapper">
           <div className="single-service-inner-body-text">
