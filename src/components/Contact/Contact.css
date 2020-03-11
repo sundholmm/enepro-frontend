@@ -58,6 +58,7 @@ textarea {
 }
 
 .contact-form-button {
+  -webkit-appearance: none;
   outline: none;
   color: #000000;
   font-weight: bold;

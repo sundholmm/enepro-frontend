@@ -36,6 +36,7 @@
 }
 
 .header-scroll-button {
+  -webkit-appearance: none;
   animation: shadow-pulse 3s infinite;
   outline: none;
   color: #000000;
