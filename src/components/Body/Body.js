@@ -2,8 +2,8 @@ import React from "react";
 import data from "../../data/data.json";
 import Contact from "../Contact/Contact";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import "./Body.css";
 
 const Body = props => {
@@ -12,7 +12,7 @@ const Body = props => {
   ));
 
   const servicesWithContent = data.services.map((service, index) => (
-    <>
+    <React.Fragment key={index}>
       {service.text && (
         <li className="body-single-service-with-content" key={index}>
           <FontAwesomeIcon icon={faArrowRight} />
@@ -21,17 +21,15 @@ const Body = props => {
           </Link>
         </li>
       )}
-    </>
+    </React.Fragment>
   ));
 
   const servicesWithNoContent = data.services.map((service, index) => (
-    <>
+    <React.Fragment key={index}>
       {!service.text && (
-        <li className="body-single-service-without-content" key={index}>
-          {service.title}
-        </li>
+        <li className="body-single-service-without-content">{service.title}</li>
       )}
-    </>
+    </React.Fragment>
   ));
 
   const employees = data.employees.map(employee => {
