@@ -15,7 +15,8 @@
   padding: 30px;
 }
 
-.single-service-inner-body-header-wrapper, .single-service-inner-body-text-wrapper {
+.single-service-inner-body-header-wrapper,
+.single-service-inner-body-text-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,9 +28,16 @@
 }
 
 .single-service-inner-body-text {
-  /* padding: 50px; */
   line-height: 1.6;
   width: 50vw;
+}
+
+.single-service-detail-collection {
+  margin: 50px 0px;
+}
+
+.single-service-detail-link {
+  color: white;
 }
 
 .single-service-home-link {
