@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Contact.css";
 
-const Contact = props => {
+const Contact = (props) => {
   const [emailValue, setEmailValue] = useState("");
   const [phoneValue, setPhoneValue] = useState("");
   const [textValue, setTextValue] = useState("");
@@ -15,7 +15,7 @@ const Contact = props => {
     setTextValue("");
   };
 
-  const onSubmitHandler = event => {
+  const onSubmitHandler = (event) => {
     event.preventDefault();
     let url;
     if (process.env.NODE_ENV === "development") {
@@ -24,19 +24,19 @@ const Contact = props => {
       url = process.env.REACT_APP_PRODUCTION_URL;
     }
 
-    if (emailValue || phoneValue) {
+    if (emailValue) {
       axios
         .post(url, {
           email: emailValue,
           phone: phoneValue,
-          text: textValue
+          text: textValue,
         })
-        .then(response => {
+        .then((response) => {
           clearValues();
           setStatusValue("success");
           console.log(response);
         })
-        .catch(error => {
+        .catch((error) => {
           clearValues();
           setStatusValue("error");
           console.error(error);
@@ -58,20 +58,20 @@ const Contact = props => {
             <textarea
               className="contact-form-input-text"
               placeholder="Kerro lyhyesti yhteydenottosi aiheesta (vapaaehtoinen)"
-              onChange={event => setTextValue(event.target.value)}
+              onChange={(event) => setTextValue(event.target.value)}
             ></textarea>
             <input
               className="contact-form-input-email"
               type="email"
               placeholder="Sähköposti (pakollinen)"
-              onChange={event => setEmailValue(event.target.value)}
+              onChange={(event) => setEmailValue(event.target.value)}
               required
             />
             <input
               className="contact-form-input-number"
               type="tel"
               placeholder="Puhelinnumero (vapaaehtoinen)"
-              onChange={event => setPhoneValue(event.target.value)}
+              onChange={(event) => setPhoneValue(event.target.value)}
             />
             <button className="contact-form-button">Lähetä</button>
           </div>
@@ -87,7 +87,7 @@ const Contact = props => {
             </div>
           ) : statusValue === "missing" ? (
             <div className="contact-form-status-value-error">
-              Täytä joko sähköposti tai puhelinnumero!
+              Täytä sähköpostiosoite!
             </div>
           ) : null}
         </div>
