@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import "./Body.css";
 
-const Body = props => {
+const Body = (props) => {
   const bodyText = data.body.map((paragraph, index) => (
     <p key={index}>{paragraph}</p>
   ));
@@ -32,7 +32,7 @@ const Body = props => {
     </React.Fragment>
   ));
 
-  const employees = data.employees.map(employee => {
+  const employees = data.employees.map((employee) => {
     const phone = employee.phone.replace(/\s/g, "");
     const email = (
       employee.firstname +
@@ -66,12 +66,12 @@ const Body = props => {
           <h2>Yritys</h2>
           {bodyText}
         </div>
-        <img
+        {/* <img
           className="body-marketing-image"
           draggable="false"
           alt="EnePro sale marketing"
           src={process.env.PUBLIC_URL + "/enepro.jpg"}
-        />
+        /> */}
         <div className="body-text" id="body-services">
           <h2>Palvelumme</h2>
           {servicesWithContent}
