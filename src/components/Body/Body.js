@@ -65,12 +65,6 @@ const Body = (props) => {
           <h2>Yritys</h2>
           {bodyText}
         </div>
-        {/* <img
-          className="body-marketing-image"
-          draggable="false"
-          alt="EnePro sale marketing"
-          src={process.env.PUBLIC_URL + "/enepro.jpg"}
-        /> */}
         <div className="body-text" id="body-services">
           <h2>Palvelumme</h2>
           {servicesWithContent}
