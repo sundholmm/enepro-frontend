@@ -13,7 +13,7 @@
   "services": [
     {
       "title": "Ilmalämpöpumput",
-      "path": "Ilmalampopumput",
+      "path": "ilmalampopumput",
       "text": [
         "Meiltä saat markkinoiden parhaat ilmalämpöpumput laadukkaasti ja ammattitaitoisesti asennettuna.",
         "Suunnittelemme aina parhaan mahdollisen ilmalämpöpumppuratkaisun kohteen vaatimukset huomioon ottaen. Näin taataan maksimoitu energiansäästö ja käyttömukavuus.",
@@ -27,6 +27,81 @@
         "detailLinks": [
           "https://www.scanoffice.fi/tuoteryhma/ilmalampopumput/",
           "https://www.scanvarm.fi/tuoteryhma/ilmalampopumput/?gclid=EAIaIQobChMIpM6sgd2Z5wIVx8wYCh2FEQVuEAAYASAAEgLqrPD_BwE"
+        ],
+        "additionalDetails": [
+          {
+            "title": "Suunnittelemme yhdessä asiakkaan kanssa parhaan mahdollisen ratkaisuvaihtoehdon ilmaisella kartoituskäynnillä."
+          },
+          {
+            "title": "Sisäyksikön asennus ja paikan valinta",
+            "text": [
+              "Sisäyksikkö on hyvä asentaa paikkaan, josta se pääsee puhaltamaan mahdollisimman laajalle alueelle esteettömästi. Sisäyksikössä on kuitenkin suuri määrä erilaisia vaihtoehtoja siivekkeiden ohjausten suhteen, jolloin ilma pystytään ohjaamaan haluttuihin paikkoihin. 2- kerroksisissa asunnoissa on kiinnitettävä erityistä huomiota yksikön korkeussuuntaiseen asennuspaikkaan, sekä siihen että mihinkä kohtiin rakennusta lämmintä/viileää ilmaa halutaan.",
+              "Nykyajan sisäyksiköt ovat erittäin hiljaisia, mutta emme kuitenkaan suosittele sen asentamista esimerkiksi makuuhuoneeseen.",
+              "Sisäyksikön suodattimia tulisi puhdistaa n. 1 kk välein, jolloin paikan valinnassa kannattaa myös kiinnittää huomiota helppoon pääsyyn laitteelle. Itse puhdistus on hyvin yksinkertainen ja nopea tapahtuma"
+            ]
+          },
+          {
+            "title": "Ulkoyksikön asennus",
+            "text": [
+              "Ulkoyksikön voi sijoittaa monellakin eri tavalla. Huomioon otettavia asioita ovat: ulkoyksikön tuottama pieni värinä(ei haluta resonaatiota rakenteisiin), talvella sulatusveden ohjaus pois rakenteista, visuaaliset asiat (suojakatos). Paras paikka esim. räystään alla, jottei lumikerros pääse tukkimaan laitetta ja aiheuta lämmönvaihtimen halkeamisvaaraa."
+            ]
+          },
+          {
+            "title": "Ulkoyksikön kiinnitys",
+            "text": [
+              "Yleisimmät kiinnitystavat ovat maateline, seinäteline, sokkeliteline ja parveketeline.",
+              "Mahdollisuus myös muunlaisille ratkaisuille asiakkaan toiveiden ja kohteen vaatimusten mukaisesti.",
+              "Telineen ja ulkoyksikön välissä on aina värinänvaimennuskumit",
+              "Maatelineellä kiinnitettäessä saadaan ulkoyksikkö täysin irti talon rakenteista, jolloin resonanssi-ilmiön vaaraa ei ole. Telineen alle on hyvä saada tukeva maa-alusta. Jos maa on esimerkiksi multapitoista, voidaan telineen alle asentaa kaksi 50x50 cm betonilaattaa joilla tukeva asennus varmistetaan. Jalustan mitat ovat: leveys 860 mm, syvyys 380 mm ja korkeus säädettävissä 310-420 mm. Maksimikantavuus 150 kg."
+            ],
+            "image": "maateline.jpg"
+          },
+          {
+            "text": [
+              "Seinätelineellä kiinnitettäessä jää maa-alue vapaaksi muulle käytölle. Värinänvaimenninkumien ansiosta rakenteisiin kohdistuva ääni ja mekaaninen liike on hyvin pientä. Kuitenkaan esimerkiksi puutalossa ei ole kannattavaa sijoittaa ulkoyksikköä makuuhuoneen, tai muun sellaisen paikan viereen jossa vietetään paljon aikaa. Seinätelineen mitat: Leveys 700 mm, syvyys 465 mm ja korkeus 465 mm. Maksimikantavuus 140 kg."
+            ],
+            "image": "seinateline.jpg"
+          },
+          {
+            "text": [
+              "Sokkelitelineellä kiinnitettäessä saadaan samat hyödyt kuin seinätelineellä, huomattavasti pienemmällä resonanssin mahdollisuudella. Sokkeliteline vaatii kuitenkin tukevan sokkelin/kivijalan johon se voidaan kiinnittää. Yhden jalaksen leveys 40 mm, syvyys 580 mm ja korkeus 500 mm. Maksimikantavuus 100 kg."
+            ],
+            "image": "sokkeliteline.jpg"
+          },
+          {
+            "text": [
+              "Parveketelinettä käytetään pääsääntöisesti kerrostaloissa, ja kohteissa joissa on pelkästään viilentävä ilmalämpöpumppu. Tämä siksi että ulkoyksikön alle jäävä tila on liian pieni sulatusvesien kulkeutumiseksi pois. Tarvittaessa sulatusvesi voidaan toki ohjata saattolämmityksaapelin ja putkitusten avulla pois ulkoyksikön alta, välttäen näin jäätymisvaaran. Mitat: Leveys 760 mm, syvyys 285 mm ja korkeus 100 mm."
+            ],
+            "image": "parveketeline.jpg"
+          },
+          {
+            "title": "Kondenssiveden ohjaus",
+            "text": [
+              "Sisäyksikkö kondensoi ilmasta vettä viilennys- ja kuivatustoiminnolla. Tämä vesi johdetaan sisäyksiköltä joko ulos ulkoyksikön läheisyyteen, tai sadevesiviemäriin. Jos sisäyksikön lähettyviltä löytyy viemäröinti, on vesi myös mahdollista ohjata sinne. Kondenssivesiputki on asennettava pienellä kaadolla koko sen matkan jotta vesi pääsee valumaan ulos, eikä tuki putkea. Tukkeutuminen saattaa johtaa sisäyksikön ”vuotamiseen” jolloin siitä valuu vettä lattialle."
+            ]
+          },
+          {
+            "title": "Kylmäaineputket ja kotelointi",
+            "text": [
+              "Toteutusmahdollisuuksia on lähes rajaton määrä. Ulko- ja sisäyksikön välillä kulkee kaksi eristettyä kylmäaineputkea, yksiköiden liitäntäkaapeli ja usein myös kondenssivesiputki.",
+              "Yleisin tapa on kuljettaa nämä tuotteet asennuskoteloa pitkin. Kotelo suojaa putkia hyvin esimerkiksi linnuilta, jotka tykkäävät nokkia eristettä kylmäaineputkien päältä myös erilaiset sääolosuhteet ja auringon uv – säteily eivät pääse vahingoittamaan putkia. kotelon mitat ovat: leveys 80 mm ja korkeus 60 mm. Koteloa on saatavilla sekä valkoisena että ruskeana. Kotelo on myös mahdollista maalata esim. talon väriseksi, jolloin siitä saa hyvin huomaamattoman.",
+              "Asunnon sisäpuolelle ei yleensä jää näkyviä kotelointeja. Ainoastaan tapauksissa joissa sisäyksikkö asennetaan muualle kuin ulkoseinälle, voi tulla vastaan tilanne jossa putkituksia joudutaan koteloimaan myös talon sisäpinnoilla."
+            ]
+          },
+          {
+            "title": "Sähkökytkentä",
+            "text": [
+              "Kaikki Mitsubishin ilmalämpöpumppumallit kytketään sähköverkkoon ulkoyksikön kautta. Mallista riippuen tarvittava sulakekoko on joko 10 A tai 16 A. Jos laite liitetään suoraan keskukseen tai haaroitetaan jostain ryhmästä, tarvitsee ulkoyksikön viereen asentaa turvakytkin, jolla koko laitteisto voidaan tehdä jännitteettömäksi. Mikäli kytkentä suoritetaan pistotulpalla suojamaadoitettuun pistorasiaan, ei turvakytkintä tällöin tarvita.",
+              "Ilmalämpöpumpun kanssa samassa ryhmässä voi olla muitakin sähkölaitteita, mutta on tapauskohtaisesti varmistettava ettei kuorma kasva liian suureksi."
+            ]
+          },
+          {
+            "title": "Ulkoyksikön suojakotelo ja katos",
+            "text": [
+              "Ulkoyksikkö ei välttämättä tarvitse suojakatosta teknisten ominaisuuksien puolesta. Visuaalinen hyöty on kuitenkin merkittävä, sillä ulkoyksiköstä saadaan näin paljon huomaamattomampi. Koteloita ja katoksia saatavilla kaiken värisinä."
+            ],
+            "image": "suojakotelo.jpg"
+          }
         ]
       },
       "image": "2LN35.png"
