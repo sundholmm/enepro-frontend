@@ -3,7 +3,6 @@ import data from "../../data/data.json";
 import Contact from "../Contact/Contact";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import "./Body.css";
 
 const Body = (props) => {
@@ -15,7 +14,7 @@ const Body = (props) => {
     <React.Fragment key={index}>
       {service.text && (
         <li className="body-single-service-with-content" key={index}>
-          <FontAwesomeIcon icon={faArrowRight} />
+          <FontAwesomeIcon icon="arrow-right" />
           <Link className="body-single-service-link" to={`/${service.path}`}>
             {service.title}
           </Link>
