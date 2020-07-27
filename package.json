@@ -7,16 +7,16 @@
   "version": "1.1.0",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.27",
-    "@fortawesome/free-solid-svg-icons": "^5.12.1",
-    "@fortawesome/react-fontawesome": "^0.1.9",
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "axios": "^0.19.2",
-    "core-js": "^3.6.4",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0",
-    "regenerator-runtime": "^0.13.3"
+    "core-js": "^3.6.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "regenerator-runtime": "^0.13.7"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -40,8 +40,8 @@
     ]
   },
   "devDependencies": {
-    "husky": "^4.2.3",
-    "prettier": "1.19.1",
+    "husky": "^4.2.5",
+    "prettier": "2.0.5",
     "pretty-quick": "^2.0.1"
   }
 }
