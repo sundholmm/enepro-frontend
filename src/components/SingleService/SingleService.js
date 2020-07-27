@@ -2,11 +2,19 @@ import React from "react";
 import HeaderLogo from "../Header/HeaderLogo";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./SingleService.css";
 
-const SingleService = props => {
+const SingleService = (props) => {
   const {
-    service: { title, text, image, details }
+    service: {
+      title,
+      path,
+      text,
+      image,
+      details,
+      details: { additionalDetails },
+    },
   } = props;
 
   const singleServiceText = text.map((paragraph, index) => (
@@ -26,6 +34,13 @@ const SingleService = props => {
       <br></br>
     </React.Fragment>
   ));
+
+  const additionalDetailsLink = (
+    <div className="single-service-details-link">
+      <FontAwesomeIcon icon="arrow-right" />
+      <Link to={`/${path}/ratkaisuvaihtoehdot`}>Ratkaisuvaihtoehdot</Link>
+    </div>
+  );
 
   const detailCollection = (
     <div className="single-service-detail-collection">
@@ -52,6 +67,7 @@ const SingleService = props => {
             <div className="single-service-inner-body-text">
               <h2>{title}</h2>
               {singleServiceText}
+              {additionalDetails && additionalDetailsLink}
               {details && detailCollection}
               <Link className="single-service-home-link" to={"/"}>
                 <p>Palaa takaisin etusivulle</p>
