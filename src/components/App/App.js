@@ -30,6 +30,8 @@ const App = () => {
               <Route path={`${url}/ratkaisuvaihtoehdot`} exact>
                 <SingleServiceDetails
                   details={service.details.additionalDetails}
+                  path={service.path}
+                  title={service.title}
                 />
               </Route>
             )}

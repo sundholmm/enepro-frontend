@@ -1,8 +1,7 @@
 import React from "react";
 import HeaderLogo from "../Header/HeaderLogo";
 import Footer from "../Footer/Footer";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import HyperLink from "../HyperLink/HyperLink";
 import "./SingleService.css";
 
 const SingleService = (props) => {
@@ -37,8 +36,10 @@ const SingleService = (props) => {
 
   const additionalDetailsLink = (
     <div className="single-service-details-link">
-      <FontAwesomeIcon icon="arrow-right" />
-      <Link to={`/${path}/ratkaisuvaihtoehdot`}>Ratkaisuvaihtoehdot</Link>
+      <HyperLink
+        path={`/${path}/ratkaisuvaihtoehdot`}
+        text={"Ratkaisuvaihtoehdot"}
+      />
     </div>
   );
 
@@ -69,9 +70,7 @@ const SingleService = (props) => {
               {singleServiceText}
               {additionalDetails && additionalDetailsLink}
               {details && detailCollection}
-              <Link className="single-service-home-link" to={"/"}>
-                <p>Palaa takaisin etusivulle</p>
-              </Link>
+              <HyperLink path={"/"} text={"Palaa takaisin etusivulle"} />
             </div>
           </div>
         </div>

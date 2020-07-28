@@ -23,10 +23,6 @@
   transition: transform 0.2s;
 }
 
-.body-text > li > svg {
-  padding-right: 10px;
-}
-
 .body-additional-services-title {
   margin-top: 50px;
 }
@@ -34,10 +30,6 @@
 .body-single-service-with-content:hover {
   color: whitesmoke;
   transform: scale(1.1);
-}
-
-.body-single-service-link {
-  color: white;
 }
 
 .body-employees-title {

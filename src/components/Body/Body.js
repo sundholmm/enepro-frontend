@@ -1,8 +1,7 @@
 import React from "react";
 import data from "../../data/data.json";
 import Contact from "../Contact/Contact";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import HyperLink from "../HyperLink/HyperLink";
 import "./Body.css";
 
 const Body = (props) => {
@@ -14,10 +13,7 @@ const Body = (props) => {
     <React.Fragment key={index}>
       {service.text && (
         <li className="body-single-service-with-content" key={index}>
-          <FontAwesomeIcon icon="arrow-right" />
-          <Link className="body-single-service-link" to={`/${service.path}`}>
-            {service.title}
-          </Link>
+          <HyperLink path={`/${service.path}`} text={service.title} />
         </li>
       )}
     </React.Fragment>

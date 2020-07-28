@@ -33,17 +33,8 @@
 }
 
 .single-service-details-link {
-  font-size: large;
   padding-top: 20px;
   margin-bottom: 5px;
-}
-
-.single-service-details-link > svg {
-  padding-right: 10px;
-}
-
-.single-service-details-link > a {
-  color: white;
 }
 
 .single-service-detail-collection {
@@ -51,9 +42,5 @@
 }
 
 .single-service-detail-link {
-  color: white;
-}
-
-.single-service-home-link {
   color: white;
 }
