@@ -1,0 +1,11 @@
+.hyper-link {
+  font-size: large;
+}
+
+.hyper-link > svg {
+  padding-right: 10px;
+}
+
+.hyper-link > a {
+  color: white;
+}
