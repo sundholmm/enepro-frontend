@@ -58,12 +58,6 @@
   text-decoration: none;
 }
 
-@media only screen and (max-width: 1000px) {
-  .body-marketing-image {
-    width: 80vw;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .body-employees-flex-container {
     flex-direction: column;

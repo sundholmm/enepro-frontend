@@ -44,3 +44,16 @@
 .single-service-detail-link {
   color: white;
 }
+
+@media only screen and (max-width: 768px) {
+  .single-service-inner-body {
+    width: 80vw;
+  }
+  .single-service-inner-body-header {
+    padding: 0px;
+    max-width: 80vw;
+  }
+  .single-service-inner-body-text {
+    width: 80vw;
+  }
+}

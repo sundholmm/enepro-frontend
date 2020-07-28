@@ -50,3 +50,12 @@
 .single-service-additional-details-back-link > a {
   color: white;
 }
+
+@media only screen and (max-width: 768px) {
+  .single-service-additional-details-inner-body {
+    width: 80vw;
+  }
+  .single-service-additional-details-inner-body-text {
+    width: 80vw;
+  }
+}
