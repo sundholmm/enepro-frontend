@@ -12,6 +12,7 @@ const SingleService = (props) => {
       text,
       image,
       details,
+      metaDesc,
       details: { additionalDetails },
     },
   } = props;
@@ -52,6 +53,9 @@ const SingleService = (props) => {
 
   useEffect(() => {
     document.title = `EnePro Oy - ${title}`;
+    document
+      .querySelector('meta[name="description"]')
+      .setAttribute("content", metaDesc);
   });
 
   return (

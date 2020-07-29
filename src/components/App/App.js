@@ -32,6 +32,7 @@ const App = () => {
                   details={service.details.additionalDetails}
                   path={service.path}
                   title={service.title}
+                  metaDesc={service.metaDesc}
                 />
               </Route>
             )}

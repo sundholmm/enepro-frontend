@@ -11,6 +11,9 @@ const NoMatch = (props) => {
 
   useEffect(() => {
     document.title = "EnePro Oy - Sivua ei löytynyt";
+    document
+      .querySelector('meta[name="description"]')
+      .setAttribute("content", title);
   });
 
   return (

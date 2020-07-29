@@ -5,6 +5,7 @@
       "slogan": "Nykyaikaiset energiaratkaisut ammattitaidolla"
     }
   ],
+  "metaDesc": "EnePro Oy tarjoaa kiinteistöösi energiatehokkaimmat ratkaisut lämmityksen, viilennyksen sekä oman energiantuotannon osalta.",
   "body": [
     "EnePro Oy tarjoaa kokonaisvaltaisia energiaparannusratkaisuja aina omakotitaloista isoihin liikekiinteistöihin saakka.",
     "Tavoitteenamme on luoda jokaiseen kohteeseen räätälöidysti ratkaisu, joka johtaa energiansäästöön ja lisääntyneeseen käyttömukavuuteen.",
@@ -22,6 +23,7 @@
         "Huollossa puhdistamme sisä-, sekä ulkoyksikön ja desinfioimme sisäyksikön raikkaamman huoneilman takaamiseksi. Mittaamme laitteen kylmäaineen painetasot ja näin varmistetaan kylmäaineen riittävyys. Tarkastamme sähköliitännät sekä kondenssiveden poiston toimivuuden.",
         "Ilmalämpöpumppuasennukset, sekä huollot Etelä-Suomen alueella: Porvoo, Helsinki, Vantaa. Myös muu suomi sopimuksen mukaan."
       ],
+      "metaDesc": "Meiltä saat markkinoiden parhaat ilmalämpöpumput laadukkaasti ja ammattitaitoisesti asennettuna.",
       "details": {
         "detailsTitle": "Lisätietoa ilmalämpöpumpuista",
         "detailLinks": [
@@ -117,6 +119,7 @@
         "Aurinkopaneelijärjestelmien suunnittelussa tärkeintä on kartoittaa kiinteistön kulutuskohteet, joiden mukaan voidaan mitoittaa oikean kokoinen järjestelmä.",
         "Teemme myös yhteistyössä Porvoolaisen X-Glass:in kanssa off-grid järjestelmiä, joita voi asentaa esimerkiksi katetun terassin yhteyteen. Näin terassin valaistus ja muut piensähköntarpeet saadaan katettua ilman verkkoonliittämistarvetta. Näin ollen vältytään sähkötöiden aiheuttamilta kustannuksilta ja esimerkiksi valaisimien vaihdon voi suorittaa itse."
       ],
+      "metaDesc": "Toimitamme avaimet käteen pakettina aurinkosähköjärjestelmän kohteeseen kuin kohteeseen. Toimimme Scanoffice Oy:n aurinkopartnerina.",
       "details": {
         "detailsTitle": "Lisätietoa aurinkovoimaloista ja aurinkosähköjärjestelmistä",
         "detailLinks": [
@@ -132,6 +135,7 @@
         "Lämmityslaitteiston vaihtaminen kokonaan uuteen ei useinkaan ole kannattavin vaihtoehto. Sen sijaan jo olemassa olevan laitteiston säädön nykyaikaistamisella saavutetaan tuntuvia säästöjä. Tämä pätee etenkin kiinteistöissä, joissa on käytössä monta eri lämmitysmuotoa esim. takka, suora sähkölämmitys ja ilmalämpöpumppu. Älykkäillä säätöjärjestelmillä saadaan kaikki laitteistot toimimaan synkronoidusti, jolloin pystytään hyödyntämään mahdollisimman hyvin jokaisen lämmitysmuodon parhaat puolet.",
         "Vaikka älytermostaatit sisältävät paljon erilaisia ominaisuuksia, ei niiden käyttö ole kuitenkaan sen monimutkaisempaa kuin vanhanaikaistenkaan termostaattien."
       ],
+      "metaDesc": "Lämmityksen älykkäät säätöjärjestelmät.",
       "details": {
         "detailsTitle": "Lisätietoa lämmityksen älykkäistä säätöjärjestelmistä",
         "detailLinks": [

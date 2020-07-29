@@ -5,7 +5,7 @@ import HyperLink from "../HyperLink/HyperLink";
 import "./SingleServiceDetails.css";
 
 const SingleServiceDetails = (props) => {
-  const { details, title, path } = props;
+  const { details, title, path, metaDesc } = props;
 
   const detailCollection = details.map((detail, index) => (
     <div key={index} className="single-service-additional-detail">
@@ -25,6 +25,9 @@ const SingleServiceDetails = (props) => {
 
   useEffect(() => {
     document.title = `EnePro Oy - ${title}`;
+    document
+      .querySelector('meta[name="description"]')
+      .setAttribute("content", metaDesc);
   });
 
   return (

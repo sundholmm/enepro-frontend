@@ -56,6 +56,9 @@ const Body = (props) => {
 
   useEffect(() => {
     document.title = "EnePro Oy";
+    document
+      .querySelector('meta[name="description"]')
+      .setAttribute("content", data.metaDesc);
   });
 
   return (
