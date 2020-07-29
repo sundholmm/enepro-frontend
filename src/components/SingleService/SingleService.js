@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeaderLogo from "../Header/HeaderLogo";
 import Footer from "../Footer/Footer";
 import HyperLink from "../HyperLink/HyperLink";
@@ -49,6 +49,10 @@ const SingleService = (props) => {
       {links}
     </div>
   );
+
+  useEffect(() => {
+    document.title = `EnePro Oy - ${title}`;
+  });
 
   return (
     <div className="single-service">

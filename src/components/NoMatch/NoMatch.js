@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeaderLogo from "../Header/HeaderLogo";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 import "./NoMatch.css";
 
-const NoMatch = props => {
+const NoMatch = (props) => {
   const {
-    noMatch: { title, text }
+    noMatch: { title, text },
   } = props;
+
+  useEffect(() => {
+    document.title = "EnePro Oy - Sivua ei löytynyt";
+  });
 
   return (
     <div className="no-match">
@@ -22,7 +26,7 @@ const NoMatch = props => {
         </div>
       </div>
       <div className="no-match-footer">
-      <Footer/>
+        <Footer />
       </div>
     </div>
   );
