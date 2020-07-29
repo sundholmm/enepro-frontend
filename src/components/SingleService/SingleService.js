@@ -38,7 +38,7 @@ const SingleService = (props) => {
     <div className="single-service-details-link">
       <HyperLink
         path={`/${path}/ratkaisuvaihtoehdot`}
-        text={"Ratkaisuvaihtoehdot"}
+        text={"Ratkaisuvaihtoehtoja"}
       />
     </div>
   );
