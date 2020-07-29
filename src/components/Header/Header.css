@@ -1,6 +1,6 @@
 .header {
   height: 100vh;
-  background-image: url("/paneelikuva.jpg");
+  background-image: url("/paneelikuva-low-res.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -14,4 +14,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .header {
+    background-image: url("/paneelikuva-high-res.jpg");
+  }
 }

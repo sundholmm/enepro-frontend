@@ -30,15 +30,17 @@
         ],
         "additionalDetails": [
           {
-            "title": "Suunnittelemme yhdessä asiakkaan kanssa parhaan mahdollisen ratkaisuvaihtoehdon ilmaisella kartoituskäynnillä."
+            "title": "Suunnittelemme yhdessä asiakkaan kanssa parhaan mahdollisen ratkaisuvaihtoehdon ilmaisella kartoituskäynnillä.",
+            "image": "asiakaskuva.jpg"
           },
           {
             "title": "Sisäyksikön asennus ja paikan valinta",
             "text": [
               "Sisäyksikkö on hyvä asentaa paikkaan, josta se pääsee puhaltamaan mahdollisimman laajalle alueelle esteettömästi. Sisäyksikössä on kuitenkin suuri määrä erilaisia vaihtoehtoja siivekkeiden ohjausten suhteen, jolloin ilma pystytään ohjaamaan haluttuihin paikkoihin. 2- kerroksisissa asunnoissa on kiinnitettävä erityistä huomiota yksikön korkeussuuntaiseen asennuspaikkaan, sekä siihen että mihinkä kohtiin rakennusta lämmintä/viileää ilmaa halutaan.",
               "Nykyajan sisäyksiköt ovat erittäin hiljaisia, mutta emme kuitenkaan suosittele sen asentamista esimerkiksi makuuhuoneeseen.",
-              "Sisäyksikön suodattimia tulisi puhdistaa n. 1 kk välein, jolloin paikan valinnassa kannattaa myös kiinnittää huomiota helppoon pääsyyn laitteelle. Itse puhdistus on hyvin yksinkertainen ja nopea tapahtuma"
-            ]
+              "Sisäyksikön suodattimia tulisi puhdistaa n. 1 kk välein, jolloin paikan valinnassa kannattaa myös kiinnittää huomiota helppoon pääsyyn laitteelle. Itse puhdistus on hyvin yksinkertainen ja nopea tapahtuma."
+            ],
+            "image": "sisayksikko.jpg"
           },
           {
             "title": "Ulkoyksikön asennus",
@@ -51,7 +53,7 @@
             "text": [
               "Yleisimmät kiinnitystavat ovat maateline, seinäteline, sokkeliteline ja parveketeline.",
               "Mahdollisuus myös muunlaisille ratkaisuille asiakkaan toiveiden ja kohteen vaatimusten mukaisesti.",
-              "Telineen ja ulkoyksikön välissä on aina värinänvaimennuskumit",
+              "Telineen ja ulkoyksikön välissä on aina värinänvaimennuskumit.",
               "Maatelineellä kiinnitettäessä saadaan ulkoyksikkö täysin irti talon rakenteista, jolloin resonanssi-ilmiön vaaraa ei ole. Telineen alle on hyvä saada tukeva maa-alusta. Jos maa on esimerkiksi multapitoista, voidaan telineen alle asentaa kaksi 50x50 cm betonilaattaa joilla tukeva asennus varmistetaan. Jalustan mitat ovat: leveys 860 mm, syvyys 380 mm ja korkeus säädettävissä 310-420 mm. Maksimikantavuus 150 kg."
             ],
             "image": "maateline.jpg"
