@@ -26,7 +26,7 @@
   width: 40vw;
 }
 
-.single-service-additional-detail {
+.single-service-additional-detail:not(:first-child) {
   padding: 25px;
   margin-top: 75px;
   margin-bottom: 75px;
@@ -34,10 +34,23 @@
   border-radius: 0px 30px 0px 30px;
 }
 
+.single-service-additional-detail:first-child {
+  text-align: center;
+}
+
+.single-service-additional-detail:first-child h2 {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.single-service-additional-detail:first-child img {
+  max-width: none;
+}
+
 .single-service-additional-detail-image {
   width: 100%;
   height: auto;
-  max-width: 500px;
+  max-width: max-content;
 }
 
 .single-service-additional-details-back-link {
