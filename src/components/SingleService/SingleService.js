@@ -17,9 +17,36 @@ const SingleService = (props) => {
     },
   } = props;
 
-  const singleServiceText = text.map((paragraph, index) => (
-    <p key={index}>{paragraph}</p>
-  ));
+  const additionalDetailsLink = (
+    <div className="single-service-details-link">
+      <HyperLink
+        path={`/${path}/ratkaisuvaihtoehdot`}
+        text={"Ratkaisuvaihtoehtoja"}
+      />
+    </div>
+  );
+
+  const singleServiceText = text.map((element) => {
+    if (Array.isArray(element)) {
+      return element.map((text, index) => {
+        if (typeof text === "object" && text.isHeader) {
+          return <h2 key={index}>{text.header}</h2>;
+        } else {
+          return <p key={index}>{text}</p>;
+        }
+      });
+    } else if (
+      typeof element === "object" &&
+      element !== null &&
+      element.addLink &&
+      additionalDetails
+    ) {
+      return (
+        <React.Fragment key="link">{additionalDetailsLink}</React.Fragment>
+      );
+    }
+    return null;
+  });
 
   const links = details.detailLinks.map((link, index) => (
     <React.Fragment key={index}>
@@ -34,15 +61,6 @@ const SingleService = (props) => {
       <br></br>
     </React.Fragment>
   ));
-
-  const additionalDetailsLink = (
-    <div className="single-service-details-link">
-      <HyperLink
-        path={`/${path}/ratkaisuvaihtoehdot`}
-        text={"Ratkaisuvaihtoehtoja"}
-      />
-    </div>
-  );
 
   const detailCollection = (
     <div className="single-service-detail-collection">
@@ -76,7 +94,6 @@ const SingleService = (props) => {
             <div className="single-service-inner-body-text">
               <h2>{title}</h2>
               {singleServiceText}
-              {additionalDetails && additionalDetailsLink}
               {details && detailCollection}
               <HyperLink path={"/"} text={"Palaa takaisin etusivulle"} />
             </div>

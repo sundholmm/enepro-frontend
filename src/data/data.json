@@ -16,12 +16,22 @@
       "title": "Ilmalämpöpumput",
       "path": "ilmalampopumput",
       "text": [
-        "Meiltä saat markkinoiden parhaat ilmalämpöpumput laadukkaasti ja ammattitaitoisesti asennettuna.",
-        "Suunnittelemme aina parhaan mahdollisen ilmalämpöpumppuratkaisun kohteen vaatimukset huomioon ottaen. Näin taataan maksimoitu energiansäästö ja käyttömukavuus.",
-        "Palveluihimme kuuluu myös ilmalämpöpumppujen huolto.",
-        "Ilmalämpöpumpun huoltaminen on tärkeää sen lämmitystehon ja hyötysuhteen säilyttämisen kannalta. Myös laitteen elinikä kasvaa huomattavasti.",
-        "Huollossa puhdistamme sisä-, sekä ulkoyksikön ja desinfioimme sisäyksikön raikkaamman huoneilman takaamiseksi. Mittaamme laitteen kylmäaineen painetasot ja näin varmistetaan kylmäaineen riittävyys. Tarkastamme sähköliitännät sekä kondenssiveden poiston toimivuuden.",
-        "Ilmalämpöpumppuasennukset, sekä huollot Etelä-Suomen alueella: Porvoo, Helsinki, Vantaa. Myös muu suomi sopimuksen mukaan."
+        [
+          "Meiltä saat markkinoiden parhaat ilmalämpöpumput laadukkaasti ja ammattitaitoisesti asennettuna.",
+          "Suunnittelemme aina parhaan mahdollisen ilmalämpöpumppuratkaisun kohteen vaatimukset huomioon ottaen. Näin taataan maksimoitu energiansäästö ja käyttömukavuus."
+        ],
+        {
+          "addLink": true
+        },
+        [
+          {
+            "header": "Palveluihimme kuuluu myös ilmalämpöpumppujen huolto",
+            "isHeader": true
+          },
+          "Ilmalämpöpumpun huoltaminen on tärkeää sen lämmitystehon ja hyötysuhteen säilyttämisen kannalta. Myös laitteen elinikä kasvaa huomattavasti.",
+          "Huollossa puhdistamme sisä-, sekä ulkoyksikön ja desinfioimme sisäyksikön raikkaamman huoneilman takaamiseksi. Mittaamme laitteen kylmäaineen painetasot ja näin varmistetaan kylmäaineen riittävyys. Tarkastamme sähköliitännät sekä kondenssiveden poiston toimivuuden.",
+          "Ilmalämpöpumppuasennukset, sekä huollot Etelä-Suomen alueella: Porvoo, Helsinki, Vantaa. Myös muu suomi sopimuksen mukaan."
+        ]
       ],
       "metaDesc": "Meiltä saat markkinoiden parhaat ilmalämpöpumput laadukkaasti ja ammattitaitoisesti asennettuna.",
       "details": {
@@ -114,10 +124,12 @@
       "title": "Aurinkovoimalat ja aurinkosähköjärjestelmät",
       "path": "aurinkosahkojarjestelmat",
       "text": [
-        "Toimitamme avaimet käteen pakettina aurinkosähköjärjestelmän kohteeseen kuin kohteeseen. Toimimme Scanoffice Oy:n aurinkopartnerina.",
-        "Scanoffice Aurinkopartneri on luotettava aurinkosähköalan toimija, jolta saa Pohjoismaiden olosuhteisiin suunnitellut aurinkovoimalat vaivattomasti avaimet käteen periaatteella. Vuodesta 1984 toiminut suomalainen Scanoffice Oy toimii tuotteiden maahantuojana, joka takaa toimivan jälkimarkkinointipalvelun vuosiksi eteenpäin. (Scanoffice Oy 2020)",
-        "Aurinkopaneelijärjestelmien suunnittelussa tärkeintä on kartoittaa kiinteistön kulutuskohteet, joiden mukaan voidaan mitoittaa oikean kokoinen järjestelmä.",
-        "Teemme myös yhteistyössä Porvoolaisen X-Glass:in kanssa off-grid järjestelmiä, joita voi asentaa esimerkiksi katetun terassin yhteyteen. Näin terassin valaistus ja muut piensähköntarpeet saadaan katettua ilman verkkoonliittämistarvetta. Näin ollen vältytään sähkötöiden aiheuttamilta kustannuksilta ja esimerkiksi valaisimien vaihdon voi suorittaa itse."
+        [
+          "Toimitamme avaimet käteen pakettina aurinkosähköjärjestelmän kohteeseen kuin kohteeseen. Toimimme Scanoffice Oy:n aurinkopartnerina.",
+          "Scanoffice Aurinkopartneri on luotettava aurinkosähköalan toimija, jolta saa Pohjoismaiden olosuhteisiin suunnitellut aurinkovoimalat vaivattomasti avaimet käteen periaatteella. Vuodesta 1984 toiminut suomalainen Scanoffice Oy toimii tuotteiden maahantuojana, joka takaa toimivan jälkimarkkinointipalvelun vuosiksi eteenpäin. (Scanoffice Oy 2020)",
+          "Aurinkopaneelijärjestelmien suunnittelussa tärkeintä on kartoittaa kiinteistön kulutuskohteet, joiden mukaan voidaan mitoittaa oikean kokoinen järjestelmä.",
+          "Teemme myös yhteistyössä Porvoolaisen X-Glass:in kanssa off-grid järjestelmiä, joita voi asentaa esimerkiksi katetun terassin yhteyteen. Näin terassin valaistus ja muut piensähköntarpeet saadaan katettua ilman verkkoonliittämistarvetta. Näin ollen vältytään sähkötöiden aiheuttamilta kustannuksilta ja esimerkiksi valaisimien vaihdon voi suorittaa itse."
+        ]
       ],
       "metaDesc": "Toimitamme avaimet käteen pakettina aurinkosähköjärjestelmän kohteeseen kuin kohteeseen. Toimimme Scanoffice Oy:n aurinkopartnerina.",
       "details": {
@@ -132,8 +144,10 @@
       "title": "Lämmityksen älykkäät säätöjärjestelmät",
       "path": "saatojarjestelmat",
       "text": [
-        "Lämmityslaitteiston vaihtaminen kokonaan uuteen ei useinkaan ole kannattavin vaihtoehto. Sen sijaan jo olemassa olevan laitteiston säädön nykyaikaistamisella saavutetaan tuntuvia säästöjä. Tämä pätee etenkin kiinteistöissä, joissa on käytössä monta eri lämmitysmuotoa esim. takka, suora sähkölämmitys ja ilmalämpöpumppu. Älykkäillä säätöjärjestelmillä saadaan kaikki laitteistot toimimaan synkronoidusti, jolloin pystytään hyödyntämään mahdollisimman hyvin jokaisen lämmitysmuodon parhaat puolet.",
-        "Vaikka älytermostaatit sisältävät paljon erilaisia ominaisuuksia, ei niiden käyttö ole kuitenkaan sen monimutkaisempaa kuin vanhanaikaistenkaan termostaattien."
+        [
+          "Lämmityslaitteiston vaihtaminen kokonaan uuteen ei useinkaan ole kannattavin vaihtoehto. Sen sijaan jo olemassa olevan laitteiston säädön nykyaikaistamisella saavutetaan tuntuvia säästöjä. Tämä pätee etenkin kiinteistöissä, joissa on käytössä monta eri lämmitysmuotoa esim. takka, suora sähkölämmitys ja ilmalämpöpumppu. Älykkäillä säätöjärjestelmillä saadaan kaikki laitteistot toimimaan synkronoidusti, jolloin pystytään hyödyntämään mahdollisimman hyvin jokaisen lämmitysmuodon parhaat puolet.",
+          "Vaikka älytermostaatit sisältävät paljon erilaisia ominaisuuksia, ei niiden käyttö ole kuitenkaan sen monimutkaisempaa kuin vanhanaikaistenkaan termostaattien."
+        ]
       ],
       "metaDesc": "Lämmityksen älykkäät säätöjärjestelmät.",
       "details": {
