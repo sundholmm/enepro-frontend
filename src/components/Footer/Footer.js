@@ -2,7 +2,7 @@ import React from "react";
 import data from "../../data/data.json";
 import "./Footer.css";
 
-const Footer = props => {
+const Footer = (props) => {
   const date = new Date();
 
   const contact = data.address.map((info, index) => (
@@ -51,6 +51,20 @@ const Footer = props => {
               draggable="false"
               alt="Scanoffice Aurinkopartneri"
               src={process.env.PUBLIC_URL + "/so-aurinkopartneri-logo.jpg"}
+            />
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://www.scanoffice.fi/tuoteryhma/ilmalampopumput/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="footer-img"
+              draggable="false"
+              alt="Scanoffice Lämpöpumppu Dealer"
+              src={process.env.PUBLIC_URL + "/dealer.jpeg"}
             />
           </a>
         </div>
