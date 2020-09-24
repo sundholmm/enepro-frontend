@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./HeaderLogo.css";
 
-const HeaderLogo = props => {
+const HeaderLogo = (props) => {
   const { includeTitleAndButton, title, scrollToElement } = props;
   return (
     <div className="header-img-logo-wrapper">
@@ -12,7 +12,7 @@ const HeaderLogo = props => {
             className="header-img-logo"
             draggable="false"
             alt="EnePro Oy"
-            src={process.env.PUBLIC_URL + "/logo.png"}
+            src={process.env.PUBLIC_URL + "/logo.webp"}
           />
         </Link>
         {includeTitleAndButton && (
