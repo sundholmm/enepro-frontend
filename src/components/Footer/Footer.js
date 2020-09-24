@@ -22,7 +22,7 @@ const Footer = (props) => {
               className="footer-img"
               draggable="false"
               alt="Mitsubishi Electric"
-              src={process.env.PUBLIC_URL + "/mitsubishi-electric-logo.png"}
+              src={process.env.PUBLIC_URL + "/mitsubishi-electric-logo.webp"}
             />
           </a>
         </div>
@@ -36,7 +36,7 @@ const Footer = (props) => {
               className="footer-img footer-img-middle"
               draggable="false"
               alt="Luottoluokitus AA"
-              src={process.env.PUBLIC_URL + "/luottoluokitus.jpg"}
+              src={process.env.PUBLIC_URL + "/luottoluokitus.webp"}
             />
           </a>
         </div>
@@ -50,7 +50,7 @@ const Footer = (props) => {
               className="footer-img"
               draggable="false"
               alt="Scanoffice Aurinkopartneri"
-              src={process.env.PUBLIC_URL + "/so-aurinkopartneri-logo.jpg"}
+              src={process.env.PUBLIC_URL + "/so-aurinkopartneri-logo.webp"}
             />
           </a>
         </div>
@@ -64,7 +64,7 @@ const Footer = (props) => {
               className="footer-img"
               draggable="false"
               alt="Scanoffice Lämpöpumppu Dealer"
-              src={process.env.PUBLIC_URL + "/dealer.jpeg"}
+              src={process.env.PUBLIC_URL + "/dealer.webp"}
             />
           </a>
         </div>

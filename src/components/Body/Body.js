@@ -42,7 +42,7 @@ const Body = (props) => {
           draggable="false"
           alt={employee.firstname + " " + employee.lastname}
           src={
-            process.env.PUBLIC_URL + `/${employee.firstname.toLowerCase()}.jpg`
+            process.env.PUBLIC_URL + `/${employee.firstname.toLowerCase()}.webp`
           }
         />
         <h2>{employee.firstname + " " + employee.lastname}</h2>
