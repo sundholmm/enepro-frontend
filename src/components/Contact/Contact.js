@@ -17,16 +17,9 @@ const Contact = (props) => {
 
   const onSubmitHandler = (event) => {
     event.preventDefault();
-    let url;
-    if (process.env.NODE_ENV === "development") {
-      url = process.env.REACT_APP_DEVELOPMENT_URL;
-    } else {
-      url = process.env.REACT_APP_PRODUCTION_URL;
-    }
-
     if (emailValue) {
       axios
-        .post(url, {
+        .post(process.env.REACT_APP_PRODUCTION_URL, {
           email: emailValue,
           phone: phoneValue,
           text: textValue,
