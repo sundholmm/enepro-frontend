@@ -121,6 +121,24 @@
       "image": "2LN35.webp"
     },
     {
+      "title": "Ilma-vesilämpöpumput",
+      "path": "ilma-vesilampopumput",
+      "text": [
+        [
+          "Ilma-vesilämpöpumppu sopii erinomaisesti nykyisen lämmitysjärjestelmän rinnalle tai koko järjestelmän kattavaksi lämmitysjärjestelmäksi.",
+          "Se on kannattava investointi, koska säästät sähkö- tai öljylämmitykseen verrattuna jopa puolet talosi lämmityskustannuksista.",
+          "Kysy lisää ilma-vesilämpöpumppujärjestelmistä, vastailemme mielellämme."
+        ]
+      ],
+      "metaDesc": "Ilma-vesilämpöpumpulla säästät sähkö- tai öljylämmitykseen verrattuna jopa puolet talosi lämmityskustannuksista.",
+      "details": {
+        "detailsTitle": "Lisätietoa ilma-vesilämpöpumppujärjestelmistä",
+        "detailLinks": [
+          "https://www.scanoffice.fi/tuoteryhma/ilma-vesilampopumput/"
+        ]
+      }
+    },
+    {
       "title": "Aurinkovoimalat ja aurinkosähköjärjestelmät",
       "path": "aurinkosahkojarjestelmat",
       "text": [
@@ -158,26 +176,6 @@
         ]
       },
       "image": "alykkaat_jarjestelmat.webp"
-    },
-    {
-      "title": "Laitteiden etäsäätö",
-      "path": "etasaato"
-    },
-    {
-      "title": "Valaistusratkaisut",
-      "path": "valaistusratkaisut"
-    },
-    {
-      "title": "Ilmanvaihto, lämmön talteenotto, sisäilmanlaadun parantaminen",
-      "path": "sisailmanlaatu"
-    },
-    {
-      "title": "Järjestelmien ylläpito ja huollot",
-      "path": "yllapito"
-    },
-    {
-      "title": "Energiakatselmukset",
-      "path": "energiakatselmukset"
     }
   ],
   "noMatch": {
