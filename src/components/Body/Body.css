@@ -23,10 +23,6 @@
   transition: transform 0.2s;
 }
 
-.body-additional-services-title {
-  margin-top: 50px;
-}
-
 .body-single-service-with-content:hover {
   color: whitesmoke;
   transform: scale(1.1);

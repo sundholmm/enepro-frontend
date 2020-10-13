@@ -9,20 +9,12 @@ const Body = (props) => {
     <p key={index}>{paragraph}</p>
   ));
 
-  const servicesWithContent = data.services.map((service, index) => (
+  const services = data.services.map((service, index) => (
     <React.Fragment key={index}>
       {service.text && (
         <li className="body-single-service-with-content" key={index}>
           <HyperLink path={`/${service.path}`} text={service.title} />
         </li>
-      )}
-    </React.Fragment>
-  ));
-
-  const servicesWithNoContent = data.services.map((service, index) => (
-    <React.Fragment key={index}>
-      {!service.text && (
-        <li className="body-single-service-without-content">{service.title}</li>
       )}
     </React.Fragment>
   ));
@@ -70,13 +62,7 @@ const Body = (props) => {
         </div>
         <div className="body-text" id="body-services">
           <h2>Palvelumme</h2>
-          {servicesWithContent}
-          {servicesWithNoContent.length > 0 && (
-            <>
-              <h2 className="body-additional-services-title">Lisäksi</h2>
-              {servicesWithNoContent}
-            </>
-          )}
+          {services}
         </div>
         <h2 className="body-employees-title">Tekijät</h2>
         <div className="body-employees-flex-container">{employees}</div>
