@@ -5,7 +5,7 @@ import HyperLink from "../HyperLink/HyperLink";
 import Picture from "../Picture/Picture";
 import "./Body.css";
 
-const Body = (props) => {
+const Body = () => {
   const bodyText = data.body.map((paragraph, index) => (
     <p key={index}>{paragraph}</p>
   ));
@@ -36,6 +36,7 @@ const Body = (props) => {
           webp={`${imgPrefix}.webp`}
           jpg={`${imgPrefix}.jpg`}
           alt={employee.firstname + " " + employee.lastname}
+          height="160px"
         />
         <h2>{employee.firstname + " " + employee.lastname}</h2>
         <p>{employee.title}</p>
