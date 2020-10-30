@@ -3,7 +3,7 @@ import data from "../../data/data.json";
 import Picture from "../Picture/Picture";
 import "./Footer.css";
 
-const Footer = (props) => {
+const Footer = () => {
   const date = new Date();
 
   const contact = data.address.map((info, index) => (
@@ -24,6 +24,7 @@ const Footer = (props) => {
               alt="Mitsubishi Electric"
               webp="mitsubishi-electric-logo.webp"
               jpg="mitsubishi-electric-logo.jpg"
+              height="150px"
             />
           </a>
         </div>
@@ -38,6 +39,7 @@ const Footer = (props) => {
               alt="Luottoluokitus AA"
               webp="luottoluokitus.webp"
               jpg="luottoluokitus.jpg"
+              height="150px"
             />
           </a>
         </div>
@@ -52,6 +54,7 @@ const Footer = (props) => {
               alt="Scanoffice Aurinkopartneri"
               webp="so-aurinkopartneri-logo.webp"
               jpg="so-aurinkopartneri-logo.jpg"
+              height="150px"
             />
           </a>
         </div>
@@ -66,12 +69,15 @@ const Footer = (props) => {
               alt="Scanoffice Lämpöpumppu Dealer"
               webp="dealer.webp"
               jpg="dealer.jpg"
+              height="150px"
             />
           </a>
         </div>
       </div>
       <div className="footer-address">{contact}</div>
-      <p>&copy; {date.getFullYear()} EnePro Oy. Kaikki oikeudet pidätetään.</p>
+      <p className="footer-copyright">
+        &copy; {date.getFullYear()} EnePro Oy. Kaikki oikeudet pidätetään.
+      </p>
     </div>
   );
 };

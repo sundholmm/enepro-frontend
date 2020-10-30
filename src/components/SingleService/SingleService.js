@@ -90,6 +90,7 @@ const SingleService = (props) => {
                 webp={`${image}.webp`}
                 jpg={`${image}.jpg`}
                 png={`${image}.png`}
+                height="700px"
               />
             </div>
           )}

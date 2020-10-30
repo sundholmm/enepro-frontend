@@ -14,6 +14,7 @@ const HeaderLogo = (props) => {
             png="logo.png"
             className="header-img-logo"
             alt="EnePro Oy"
+            height="120px"
           />
         </Link>
         {includeTitleAndButton && (
