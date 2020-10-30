@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import HeaderLogo from "../Header/HeaderLogo";
 import Footer from "../Footer/Footer";
 import HyperLink from "../HyperLink/HyperLink";
+import Picture from "../Picture/Picture";
 import "./SingleService.css";
 
 const SingleService = (props) => {
@@ -83,10 +84,12 @@ const SingleService = (props) => {
         <div className="single-service-inner-body">
           {image && (
             <div className="single-service-inner-body-header-wrapper">
-              <img
+              <Picture
                 className="single-service-inner-body-header"
                 alt="Palvelua kuvaava kuva"
-                src={process.env.PUBLIC_URL + `/${image}`}
+                webp={`${image}.webp`}
+                jpg={`${image}.jpg`}
+                png={`${image}.png`}
               />
             </div>
           )}

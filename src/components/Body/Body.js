@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import data from "../../data/data.json";
 import Contact from "../Contact/Contact";
 import HyperLink from "../HyperLink/HyperLink";
+import Picture from "../Picture/Picture";
 import "./Body.css";
 
 const Body = (props) => {
@@ -20,6 +21,7 @@ const Body = (props) => {
   ));
 
   const employees = data.employees.map((employee) => {
+    const imgPrefix = employee.firstname.toLowerCase();
     const phone = employee.phone.replace(/\s/g, "");
     const email = (
       employee.firstname +
@@ -29,13 +31,11 @@ const Body = (props) => {
     ).toLowerCase();
     return (
       <div key={employee.firstname} className="body-employee-div selectable">
-        <img
+        <Picture
           className="body-employee-imgs"
-          draggable="false"
+          webp={`${imgPrefix}.webp`}
+          jpg={`${imgPrefix}.jpg`}
           alt={employee.firstname + " " + employee.lastname}
-          src={
-            process.env.PUBLIC_URL + `/${employee.firstname.toLowerCase()}.webp`
-          }
         />
         <h2>{employee.firstname + " " + employee.lastname}</h2>
         <p>{employee.title}</p>

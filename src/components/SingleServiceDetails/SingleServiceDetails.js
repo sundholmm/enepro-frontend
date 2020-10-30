@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import HeaderLogo from "../Header/HeaderLogo";
 import Footer from "../Footer/Footer";
 import HyperLink from "../HyperLink/HyperLink";
+import Picture from "../Picture/Picture";
 import "./SingleServiceDetails.css";
 
 const SingleServiceDetails = (props) => {
@@ -11,11 +12,12 @@ const SingleServiceDetails = (props) => {
     <div key={index} className="single-service-additional-detail">
       {detail.title ? <h2>{detail.title}</h2> : null}
       {detail.image ? (
-        <img
-          alt=""
+        <Picture
+          alt={detail.image}
           className="single-service-additional-detail-image"
-          src={`/${detail.image}`}
-        ></img>
+          webp={`${detail.image}.webp`}
+          jpg={`${detail.image}.jpg`}
+        />
       ) : null}
       {detail.text
         ? detail.text.map((p, index) => <p key={index}>{p}</p>)
