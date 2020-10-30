@@ -71,7 +71,9 @@ const Footer = (props) => {
         </div>
       </div>
       <div className="footer-address">{contact}</div>
-      <p>&copy; {date.getFullYear()} EnePro Oy. Kaikki oikeudet pidätetään.</p>
+      <p className="footer-copyright">
+        &copy; {date.getFullYear()} EnePro Oy. Kaikki oikeudet pidätetään.
+      </p>
     </div>
   );
 };

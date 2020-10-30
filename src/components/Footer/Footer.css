@@ -1,6 +1,7 @@
 .footer {
   width: 100%;
   text-align: center;
+  background-color: white;
 }
 
 .footer > p {
@@ -20,6 +21,10 @@
 .footer-img-middle {
   width: 100px;
   padding: 50px;
+}
+
+.footer-copyright {
+  margin: 0;
 }
 
 @media only screen and (max-width: 768px) {
