@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Picture from "../Picture/Picture";
 import "./HeaderLogo.css";
 
 const HeaderLogo = (props) => {
@@ -8,11 +9,11 @@ const HeaderLogo = (props) => {
     <div className="header-img-logo-wrapper">
       <div className="header-img-wrapper">
         <Link to={"/"}>
-          <img
+          <Picture
+            webp="logo.webp"
+            png="logo.png"
             className="header-img-logo"
-            draggable="false"
             alt="EnePro Oy"
-            src={process.env.PUBLIC_URL + "/logo.webp"}
           />
         </Link>
         {includeTitleAndButton && (

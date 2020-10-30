@@ -1,5 +1,6 @@
 import React from "react";
 import data from "../../data/data.json";
+import Picture from "../Picture/Picture";
 import "./Footer.css";
 
 const Footer = (props) => {
@@ -18,11 +19,11 @@ const Footer = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Picture
               className="footer-img"
-              draggable="false"
               alt="Mitsubishi Electric"
-              src={process.env.PUBLIC_URL + "/mitsubishi-electric-logo.webp"}
+              webp="mitsubishi-electric-logo.webp"
+              jpg="mitsubishi-electric-logo.jpg"
             />
           </a>
         </div>
@@ -32,11 +33,11 @@ const Footer = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Picture
               className="footer-img footer-img-middle"
-              draggable="false"
               alt="Luottoluokitus AA"
-              src={process.env.PUBLIC_URL + "/luottoluokitus.webp"}
+              webp="luottoluokitus.webp"
+              jpg="luottoluokitus.jpg"
             />
           </a>
         </div>
@@ -46,11 +47,11 @@ const Footer = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Picture
               className="footer-img"
-              draggable="false"
               alt="Scanoffice Aurinkopartneri"
-              src={process.env.PUBLIC_URL + "/so-aurinkopartneri-logo.webp"}
+              webp="so-aurinkopartneri-logo.webp"
+              jpg="so-aurinkopartneri-logo.jpg"
             />
           </a>
         </div>
@@ -60,11 +61,11 @@ const Footer = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Picture
               className="footer-img"
-              draggable="false"
               alt="Scanoffice Lämpöpumppu Dealer"
-              src={process.env.PUBLIC_URL + "/dealer.webp"}
+              webp="dealer.webp"
+              jpg="dealer.jpg"
             />
           </a>
         </div>
