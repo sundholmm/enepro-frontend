@@ -14,7 +14,10 @@ const Body = () => {
     <React.Fragment key={index}>
       {service.text && (
         <li className="body-single-service-with-content" key={index}>
-          <HyperLink path={`/${service.path}`} text={service.title} />
+          <HyperLink
+            path={`/${service.path}`}
+            text={service.title.replace("-", "‑")}
+          />
         </li>
       )}
     </React.Fragment>
@@ -63,7 +66,7 @@ const Body = () => {
         </div>
         <div className="body-text" id="body-services">
           <h2>Palvelumme</h2>
-          {services}
+          <ul>{services}</ul>
         </div>
         <h2 className="body-employees-title">Tekijät</h2>
         <div className="body-employees-flex-container">{employees}</div>

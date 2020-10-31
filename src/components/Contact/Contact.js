@@ -48,24 +48,36 @@ const Contact = (props) => {
       <div className="contact-form">
         <form onSubmit={onSubmitHandler} id="contact-form-element">
           <div className="contact-form-inner-wrapper">
-            <textarea
-              className="contact-form-input-text"
-              placeholder="Kerro lyhyesti yhteydenottosi aiheesta (vapaaehtoinen)"
-              onChange={(event) => setTextValue(event.target.value)}
-            ></textarea>
-            <input
-              className="contact-form-input-email"
-              type="email"
-              placeholder="Sähköposti (pakollinen)"
-              onChange={(event) => setEmailValue(event.target.value)}
-              required
-            />
-            <input
-              className="contact-form-input-number"
-              type="tel"
-              placeholder="Puhelinnumero (vapaaehtoinen)"
-              onChange={(event) => setPhoneValue(event.target.value)}
-            />
+            <div>
+              <label htmlFor="contact-form-input-text">Viesti:</label>
+              <textarea
+                id="contact-form-input-text"
+                className="contact-form-input-text"
+                placeholder="Kerro lyhyesti yhteydenottosi aiheesta"
+                onChange={(event) => setTextValue(event.target.value)}
+              ></textarea>
+            </div>
+            <div>
+              <label htmlFor="contact-form-input-email">Sähköposti:</label>
+              <input
+                id="contact-form-input-email"
+                className="contact-form-input-email"
+                type="email"
+                placeholder="etunimi.sukunimi@gmail.com"
+                onChange={(event) => setEmailValue(event.target.value)}
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="contact-form-input-number">Puhelinnumero:</label>
+              <input
+                id="contact-form-input-number"
+                className="contact-form-input-number"
+                type="tel"
+                placeholder="+358 44 1234567"
+                onChange={(event) => setPhoneValue(event.target.value)}
+              />
+            </div>
             <button className="contact-form-button">Lähetä</button>
           </div>
         </form>
