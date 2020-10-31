@@ -17,7 +17,11 @@
   margin: 50px 0px 50px 0px;
 }
 
-.body-text > li {
+.body-text > ul {
+  list-style-type: none;
+}
+
+.body-text > ul > li {
   padding: 10px;
   list-style-type: none;
   transition: transform 0.2s;
