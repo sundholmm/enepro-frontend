@@ -1,12 +1,19 @@
 .header {
   height: 100vh;
-  background-image: url("/paneelikuva-low-res.webp");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   position: relative;
   text-align: center;
   color: white;
+}
+
+.header-webp {
+  background-image: url("/paneelikuva-low-res.webp");
+}
+
+.header-no-webp {
+  background-image: url("/paneelikuva-low-res.jpg");
 }
 
 .header-flex-container {
@@ -17,7 +24,10 @@
 }
 
 @media only screen and (min-width: 992px) {
-  .header {
+  .header-webp {
     background-image: url("/paneelikuva-high-res.webp");
+  }
+  .header-no-webp {
+    background-image: url("/paneelikuva-high-res.jpg");
   }
 }
