@@ -10,8 +10,7 @@ const HeaderLogo = (props) => {
       <div className="header-img-wrapper">
         <Link to={"/"}>
           <Picture
-            webp="logo.webp"
-            png="logo.png"
+            img={{ name: "logo", format: ".png" }}
             className="header-img-logo"
             alt="EnePro Oy"
             height="120px"

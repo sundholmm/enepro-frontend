@@ -36,8 +36,7 @@ const Body = () => {
       <div key={employee.firstname} className="body-employee-div selectable">
         <Picture
           className="body-employee-imgs"
-          webp={`${imgPrefix}.webp`}
-          jpg={`${imgPrefix}.jpg`}
+          img={{ name: imgPrefix, format: ".jpg" }}
           alt={employee.firstname + " " + employee.lastname}
           height="160px"
         />

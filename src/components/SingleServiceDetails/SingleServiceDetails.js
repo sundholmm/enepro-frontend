@@ -15,8 +15,7 @@ const SingleServiceDetails = (props) => {
         <Picture
           alt={detail.image}
           className="single-service-additional-detail-image"
-          webp={`${detail.image}.webp`}
-          jpg={`${detail.image}.jpg`}
+          img={{ name: detail.image.name, format: detail.image.format }}
           height="500px"
         />
       ) : null}

@@ -22,8 +22,7 @@ const Footer = () => {
             <Picture
               className="footer-img"
               alt="Mitsubishi Electric"
-              webp="mitsubishi-electric-logo.webp"
-              jpg="mitsubishi-electric-logo.jpg"
+              img={{ name: "mitsubishi-electric-logo", format: ".jpg" }}
               height="150px"
             />
           </a>
@@ -37,8 +36,7 @@ const Footer = () => {
             <Picture
               className="footer-img footer-img-middle"
               alt="Luottoluokitus AA"
-              webp="luottoluokitus.webp"
-              jpg="luottoluokitus.jpg"
+              img={{ name: "luottoluokitus", format: ".jpg" }}
               height="150px"
             />
           </a>
@@ -52,8 +50,7 @@ const Footer = () => {
             <Picture
               className="footer-img"
               alt="Scanoffice Aurinkopartneri"
-              webp="so-aurinkopartneri-logo.webp"
-              jpg="so-aurinkopartneri-logo.jpg"
+              img={{ name: "so-aurinkopartneri-logo", format: ".jpg" }}
               height="150px"
             />
           </a>
@@ -67,8 +64,7 @@ const Footer = () => {
             <Picture
               className="footer-img"
               alt="Scanoffice Lämpöpumppu Dealer"
-              webp="dealer.webp"
-              jpg="dealer.jpg"
+              img={{ name: "dealer", format: ".jpg" }}
               height="150px"
             />
           </a>
@@ -76,7 +72,7 @@ const Footer = () => {
       </div>
       <div className="footer-address">{contact}</div>
       <p className="footer-copyright">
-        &copy; {date.getFullYear()} EnePro Oy. Kaikki oikeudet pidätetään.
+        &copy; {date.getFullYear()} {data.copyright}
       </p>
     </div>
   );

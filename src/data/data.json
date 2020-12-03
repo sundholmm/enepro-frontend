@@ -43,7 +43,7 @@
         "additionalDetails": [
           {
             "title": "Suunnittelemme yhdessä asiakkaan kanssa parhaan ratkaisuvaihtoehdon ilmaisella kartoituskäynnillä.",
-            "image": "asiakaskuva"
+            "image": { "name": "asiakaskuva", "format": ".jpg" }
           },
           {
             "title": "Sisäyksikön asennus ja paikan valinta",
@@ -52,7 +52,7 @@
               "Nykyajan sisäyksiköt ovat erittäin hiljaisia, mutta emme kuitenkaan suosittele sen asentamista esimerkiksi makuuhuoneeseen.",
               "Sisäyksikön suodattimia tulisi puhdistaa n. 1 kk välein, jolloin paikan valinnassa kannattaa myös kiinnittää huomiota helppoon pääsyyn laitteelle. Itse puhdistus on hyvin yksinkertainen ja nopea tapahtuma."
             ],
-            "image": "sisayksikko"
+            "image": { "name": "sisayksikko", "format": ".jpg" }
           },
           {
             "title": "Ulkoyksikön asennus",
@@ -68,25 +68,25 @@
               "Telineen ja ulkoyksikön välissä on aina värinänvaimennuskumit.",
               "Maatelineellä kiinnitettäessä saadaan ulkoyksikkö täysin irti talon rakenteista, jolloin resonanssi-ilmiön vaaraa ei ole. Telineen alle on hyvä saada tukeva maa-alusta. Jos maa on esimerkiksi multapitoista, voidaan telineen alle asentaa kaksi 50x50 cm betonilaattaa joilla tukeva asennus varmistetaan. Jalustan mitat ovat: leveys 860 mm, syvyys 380 mm ja korkeus säädettävissä 310-420 mm. Maksimikantavuus 150 kg."
             ],
-            "image": "maateline"
+            "image": { "name": "maateline", "format": ".jpg" }
           },
           {
             "text": [
               "Seinätelineellä kiinnitettäessä jää maa-alue vapaaksi muulle käytölle. Värinänvaimenninkumien ansiosta rakenteisiin kohdistuva ääni ja mekaaninen liike on hyvin pientä. Kuitenkaan esimerkiksi puutalossa ei ole kannattavaa sijoittaa ulkoyksikköä makuuhuoneen, tai muun sellaisen paikan viereen jossa vietetään paljon aikaa. Seinätelineen mitat: Leveys 700 mm, syvyys 465 mm ja korkeus 465 mm. Maksimikantavuus 140 kg."
             ],
-            "image": "seinateline"
+            "image": { "name": "seinateline", "format": ".jpg" }
           },
           {
             "text": [
               "Sokkelitelineellä kiinnitettäessä saadaan samat hyödyt kuin seinätelineellä, huomattavasti pienemmällä resonanssin mahdollisuudella. Sokkeliteline vaatii kuitenkin tukevan sokkelin/kivijalan johon se voidaan kiinnittää. Yhden jalaksen leveys 40 mm, syvyys 580 mm ja korkeus 500 mm. Maksimikantavuus 100 kg."
             ],
-            "image": "sokkeliteline"
+            "image": { "name": "sokkeliteline", "format": ".jpg" }
           },
           {
             "text": [
               "Parveketelinettä käytetään pääsääntöisesti kerrostaloissa, ja kohteissa joissa on pelkästään viilentävä ilmalämpöpumppu. Tämä siksi että ulkoyksikön alle jäävä tila on liian pieni sulatusvesien kulkeutumiseksi pois. Tarvittaessa sulatusvesi voidaan toki ohjata saattolämmityksaapelin ja putkitusten avulla pois ulkoyksikön alta, välttäen näin jäätymisvaaran. Mitat: Leveys 760 mm, syvyys 285 mm ja korkeus 100 mm."
             ],
-            "image": "parveketeline"
+            "image": { "name": "parveketeline", "format": ".jpg" }
           },
           {
             "title": "Kondenssiveden ohjaus",
@@ -114,11 +114,11 @@
             "text": [
               "Ulkoyksikkö ei välttämättä tarvitse suojakatosta teknisten ominaisuuksien puolesta. Visuaalinen hyöty on kuitenkin merkittävä, sillä ulkoyksiköstä saadaan näin paljon huomaamattomampi. Koteloita ja katoksia saatavilla kaiken värisinä."
             ],
-            "image": "suojakotelo"
+            "image": { "name": "suojakotelo", "format": ".jpg" }
           }
         ]
       },
-      "image": "2LN35"
+      "image": { "name": "2LN35", "format": ".png" }
     },
     {
       "title": "Ilma-vesilämpöpumput",
@@ -156,7 +156,7 @@
           "https://www.scanoffice.fi/tuoteryhma/aurinkosahkojarjestelmat"
         ]
       },
-      "image": "paneeleita_taivaalla"
+      "image": { "name": "paneeleita_taivaalla", "format": ".jpg" }
     },
     {
       "title": "Lämmityksen älykkäät säätöjärjestelmät",
@@ -175,7 +175,7 @@
           "https://salus-controls.com/fi/smart-home"
         ]
       },
-      "image": "alykkaat_jarjestelmat"
+      "image": { "name": "alykkaat_jarjestelmat", "format": ".jpg" }
     }
   ],
   "noMatch": {
@@ -202,5 +202,6 @@
     "Jätä yhteystietosi tarjousta tai ilmaista arviota varten!",
     "Ette sitoudu mihinkään, emmekä lähetä teille tarjouksen lisäksi muita viestejä."
   ],
-  "address": ["Y-tunnus: 3002978-7", "Puusepänkaarre 15", "06150 Porvoo"]
+  "address": ["Y-tunnus: 3002978-7", "Puusepänkaarre 15", "06150 Porvoo"],
+  "copyright": "EnePro Oy. Kaikki oikeudet pidätetään."
 }

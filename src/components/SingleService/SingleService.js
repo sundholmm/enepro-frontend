@@ -87,9 +87,7 @@ const SingleService = (props) => {
               <Picture
                 className="single-service-inner-body-header"
                 alt="Palvelua kuvaava kuva"
-                webp={`${image}.webp`}
-                jpg={`${image}.jpg`}
-                png={`${image}.png`}
+                img={{ name: image.name, format: image.format }}
                 height="700px"
               />
             </div>
