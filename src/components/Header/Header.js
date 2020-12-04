@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import data from "../../data/data.json";
 import HeaderLogo from "./HeaderLogo";
+import ScrollArrow from "../ScrollArrow/ScrollArrow";
 import supportsWebP from "supports-webp";
 import "./Header.css";
 
@@ -40,6 +41,9 @@ const Header = () => {
             title={title}
             scrollToElement={scrollToElement}
           />
+        </div>
+        <div className="scroll-arrow-container">
+          <ScrollArrow />
         </div>
       </div>
     </div>

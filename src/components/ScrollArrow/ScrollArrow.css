@@ -1,0 +1,17 @@
+.scroll-arrow {
+  animation: bounce 2s ease infinite;
+  color: #ffffff;
+  text-shadow: 0px 15px 5px #000000;
+  font-size: 35px;
+  font-weight: 900;
+  text-align: center;
+  width: 140px;
+  height: 110px;
+  user-select: none;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(50%);
+  }
+}
