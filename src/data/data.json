@@ -139,6 +139,103 @@
       }
     },
     {
+      "title": "Taloyhtiön energiatarkastukset",
+      "path": "taloyhtion-energiatarkastukset",
+      "text": [
+        [
+          "Energiatarkastus on taloyhtiöille suunnattu palvelu, joka on perinteistä energiakatselmusta kevyempi vaihtoehto.",
+          "Tarkastuksessa keskitytään kiinteistön energiankäyttöön ja sen tehostamiseen. Ideana on luoda kattava kokonaiskuva tämänhetkisestä tilanteesta, jonka pohjalta pystytään tekemään parannusehdotuksia. Tarkastuksessa käy myös ilmi, mikäli jotkin laitteet esim. lämmöntuotannon puolella ovat viallisia.",
+          "Tarkastus pitää sisällään kohdekäynnin jossa tehdään mittauksia, toimintakokeita ja energiankulutuksen analysointia kulutusseurannan pohjalta huomioiden kiinteistön ominaisuudet."
+        ],
+        [
+          {
+            "header": "Tarkastettavia asioita ovat esimerkiksi",
+            "isHeader": true,
+            "paddingTop": true
+          }
+        ],
+        [
+          {
+            "header": "Lämmitys",
+            "isHeader": true,
+            "paddingTop": true
+          },
+          "• Lämmönjako- tai kattilahuoneen laitteiden tarkastus",
+          "• Lämmönjakoverkoston toiminnan tarkastus kiinteistön yleisissä tiloissa ja vähintään kahdessa asunnossa eri puolilla rakennusta",
+          "• Ilmalämpöpumppuasennukset, sekä huollot Etelä-Suomen alueella: Porvoo, Helsinki, Vantaa. Myös muu suomi sopimuksen mukaan"
+        ],
+        [
+          {
+            "header": "Ilmanvaihto",
+            "isHeader": true,
+            "paddingTop": true
+          },
+          "• Ilmanvaihtojärjestelmän toiminnan tarkastaminen"
+        ],
+        [
+          {
+            "header": "Vesi",
+            "isHeader": true,
+            "paddingTop": true
+          },
+          "• Vesijohtoverkon painetason ja lämpimän käyttöveden sekä kierron paluulämpötilan tarkastaminen"
+        ],
+        [
+          {
+            "header": "Energian- ja vedenkulutus",
+            "isHeader": true,
+            "paddingTop": true
+          },
+          "• Lämmön, sähkön ja veden kulutustasot ja trendit sekä vertailu vastaavien kiinteistöjen kulutustasoon"
+        ],
+        [
+          {
+            "header": "Valaistus",
+            "isHeader": true,
+            "paddingTop": true
+          },
+          "• Yleisten tilojen valaistuksen toiminnan tarkastaminen"
+        ],
+        [
+          {
+            "header": "Raportointi",
+            "isHeader": true,
+            "paddingTop": true
+          },
+          "• Huomautusten tekeminen havaituista vioista ja puutteista",
+          "• Toimenpide-esitykset (käyttötekniset toimenpiteet ja investoinnit)",
+          "• Suositeltavat lisäselvitystarpeet toimenpiteistä, joilla taloyhtiöllä on todennäköisesti potentiaaliset mahdollisuudet parantaa energiatehokkuutta, mutta jotka vaativat lisäselvitystä",
+          "• Vaihtoehtoiset lämmitysjärjestelmät ja arvio niiden kannattavuudesta sisältäen maalämpö, PILP, ilmavesilämpöpumppu, aurinkolämpö ja -sähkö, jäteveden lämmöntalteenotto",
+          "• Älykäs säätö ja ohjaus sekä kysynnän jousto",
+          "• Rakenteelliset energiatehokkuusmahdollisuudet (yläpohja, ikkunat, ovet, julkisivu)",
+          "• Suuntaa-antava arvio taloyhtiön mahdollisuudesta hyödyntää energia-avustusta (pohjautuen rakennuksen alkuperäiseen lämmitysmuotoon ja tehtyihin remontteihin) – ei sisällä avustuksen hakuun tarvittavia laskelmia"
+        ],
+        [
+          {
+            "isHeader": true,
+            "paddingTop": true
+          },
+          "Energiatarkastuksen hinta on alkaen 650 € (sis.alv 24 %). Tarkastus sisältää pääsääntöisesti yhden rakennuksen tarkastelun.",
+          "Suuriin yrityksiin verrattuna tarkastuspalvelumme etuna on henkilökohtainen palvelu. Olette saman henkilön kanssa tekemisissä aina alusta raportin esittelyyn asti.",
+          "Mikäli kiinnostuksenne heräsi energiatarkastusta kohtaan, ottakaa rohkeasti yhteyttä, vastailemme mielellämme kysymyksiinne."
+        ],
+        [
+          {
+            "header": "Mikäli kiinnostuksenne heräsi energiatarkastusta kohtaan, ottakaa rohkeasti yhteyttä, vastailemme mielellämme kysymyksiinne.",
+            "isHeader": true,
+            "paddingTop": true
+          }
+        ]
+      ],
+      "metaDesc": "Energiatarkastus on taloyhtiöille suunnattu palvelu, joka on perinteistä energiakatselmusta kevyempi vaihtoehto.",
+      "details": {
+        "detailsTitle": "Tarkempi sisältö löytyy Motivan sivuilta.",
+        "detailLinks": [
+          "https://www.motiva.fi/koti_ja_asuminen/taloyhtiot/taloyhtion_energiatarkastus"
+        ]
+      }
+    },
+    {
       "title": "Aurinkovoimalat ja aurinkosähköjärjestelmät",
       "path": "aurinkosahkojarjestelmat",
       "text": [
@@ -186,14 +283,14 @@
     {
       "firstname": "Albert",
       "lastname": "Nordström",
-      "title": "Toimitusjohtaja",
+      "titles": ["Toimitusjohtaja"],
       "phone": "+358 40 418 9090",
       "email": "@enepro.fi"
     },
     {
       "firstname": "Matias",
       "lastname": "Virtanen",
-      "title": "Energiatekniikan Insinööri",
+      "titles": ["Energiatekniikan Insinööri"],
       "phone": "+358 45 209 7097",
       "email": "@enepro.fi"
     }

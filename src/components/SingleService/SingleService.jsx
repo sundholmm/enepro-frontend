@@ -31,7 +31,11 @@ const SingleService = (props) => {
     if (Array.isArray(element)) {
       return element.map((text, index) => {
         if (typeof text === "object" && text.isHeader) {
-          return <h2 key={index}>{text.header}</h2>;
+          return (
+            <h2 style={text.paddingTop && { paddingTop: 25 }} key={index}>
+              {text.header}
+            </h2>
+          );
         } else {
           return <p key={index}>{text}</p>;
         }
@@ -42,9 +46,7 @@ const SingleService = (props) => {
       element.addLink &&
       additionalDetails
     ) {
-      return (
-        <Fragment key="link">{additionalDetailsLink}</Fragment>
-      );
+      return <Fragment key="link">{additionalDetailsLink}</Fragment>;
     }
     return null;
   });

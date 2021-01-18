@@ -41,7 +41,11 @@ const Body = () => {
           height="160px"
         />
         <h2>{employee.firstname + " " + employee.lastname}</h2>
-        <p>{employee.title}</p>
+        {employee.titles.map((title) => (
+          <h4 className="body-employee-title" key={title}>
+            {title}
+          </h4>
+        ))}
         <a href={`tel:${phone}`}>{employee.phone}</a>
         <br />
         <a href={`mailto:${email}`}>{email}</a>

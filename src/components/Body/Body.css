@@ -60,6 +60,10 @@
   text-decoration: none;
 }
 
+.body-employee-title {
+  line-height: 0.5;
+}
+
 @media only screen and (max-width: 768px) {
   .body-employees-flex-container {
     flex-direction: column;

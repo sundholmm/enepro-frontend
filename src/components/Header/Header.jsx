@@ -34,7 +34,14 @@ const Header = () => {
 
   return (
     // Use inline style meanwhile sass-loader is fixed
-    <div className="header" style={{backgroundImage: `url(${support ? "/paneelikuva-high-res.webp" : '/paneelikuva-high-res.jpg'})`}}>
+    <div
+      className="header"
+      style={{
+        backgroundImage: `url(${
+          support ? "/paneelikuva-high-res.webp" : "/paneelikuva-high-res.jpg"
+        })`,
+      }}
+    >
       <div className="header-flex-container">
         <div className="header-img-logo-wrapper">
           <HeaderLogo
