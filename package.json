@@ -7,15 +7,15 @@
   "version": "1.2.0",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.30",
-    "@fortawesome/free-solid-svg-icons": "^5.14.0",
-    "@fortawesome/react-fontawesome": "^0.1.11",
-    "axios": "^0.19.2",
-    "core-js": "^3.6.5",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "axios": "^0.21.1",
+    "core-js": "^3.8.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "4.0.1",
     "regenerator-runtime": "^0.13.7",
     "supports-webp": "^2.0.1"
   },
@@ -23,7 +23,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "upgrade": "ncu -u --packageFile package.json",
+    "upgrade-dry": "ncu --packageFile package.json"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -41,8 +43,9 @@
     ]
   },
   "devDependencies": {
-    "husky": "^4.2.5",
-    "prettier": "2.0.5",
-    "pretty-quick": "^2.0.1"
+    "husky": "^4.3.8",
+    "npm-check-updates": "^10.2.5",
+    "prettier": "2.2.1",
+    "pretty-quick": "^3.1.0"
   }
 }
