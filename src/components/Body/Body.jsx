@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { Fragment, useEffect } from "react";
 import data from "../../data/data.json";
 import Contact from "../Contact/Contact";
 import HyperLink from "../HyperLink/HyperLink";
@@ -11,7 +11,7 @@ const Body = () => {
   ));
 
   const services = data.services.map((service, index) => (
-    <React.Fragment key={index}>
+    <Fragment key={index}>
       {service.text && (
         <li className="body-single-service-with-content" key={index}>
           <HyperLink
@@ -20,7 +20,7 @@ const Body = () => {
           />
         </li>
       )}
-    </React.Fragment>
+    </Fragment>
   ));
 
   const employees = data.employees.map((employee) => {

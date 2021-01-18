@@ -1,4 +1,3 @@
-import React from "react";
 import data from "../../data/data.json";
 import Picture from "../Picture/Picture";
 import "./Footer.css";

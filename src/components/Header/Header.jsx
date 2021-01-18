@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { Fragment, useState } from "react";
 import data from "../../data/data.json";
 import HeaderLogo from "./HeaderLogo";
 import ScrollArrow from "../ScrollArrow/ScrollArrow";
@@ -7,10 +7,10 @@ import "./Header.css";
 
 const Header = () => {
   const title = data.company.map((info, index) => (
-    <React.Fragment key={index}>
+    <Fragment key={index}>
       <h1>{info.name}</h1>
       <h2>{info.slogan}</h2>
-    </React.Fragment>
+    </Fragment>
   ));
 
   const scrollToElement = () => {
@@ -33,7 +33,8 @@ const Header = () => {
   });
 
   return (
-    <div className={support ? "header header-webp" : "header header-no-webp"}>
+    // Use inline style meanwhile sass-loader is fixed
+    <div className="header" style={{backgroundImage: `url(${support ? "/paneelikuva-high-res.webp" : '/paneelikuva-high-res.jpg'})`}}>
       <div className="header-flex-container">
         <div className="header-img-logo-wrapper">
           <HeaderLogo

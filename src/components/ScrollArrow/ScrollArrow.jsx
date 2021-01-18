@@ -1,4 +1,3 @@
-import React from "react";
 import "./ScrollArrow.css";
 
 const ScrollArrow = () => {

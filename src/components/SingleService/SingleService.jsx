@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { Fragment, useEffect } from "react";
 import HeaderLogo from "../Header/HeaderLogo";
 import Footer from "../Footer/Footer";
 import HyperLink from "../HyperLink/HyperLink";
@@ -43,14 +43,14 @@ const SingleService = (props) => {
       additionalDetails
     ) {
       return (
-        <React.Fragment key="link">{additionalDetailsLink}</React.Fragment>
+        <Fragment key="link">{additionalDetailsLink}</Fragment>
       );
     }
     return null;
   });
 
   const links = details.detailLinks.map((link, index) => (
-    <React.Fragment key={index}>
+    <Fragment key={index}>
       <a
         href={link}
         className="single-service-detail-link"
@@ -60,7 +60,7 @@ const SingleService = (props) => {
         {link}
       </a>
       <br></br>
-    </React.Fragment>
+    </Fragment>
   ));
 
   const detailCollection = (
