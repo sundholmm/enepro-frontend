@@ -40,7 +40,9 @@ const Body = () => {
           alt={employee.firstname + " " + employee.lastname}
           height="160px"
         />
-        <h2>{employee.firstname + " " + employee.lastname}</h2>
+        <h2 className="body-text-header">
+          {employee.firstname + " " + employee.lastname}
+        </h2>
         {employee.titles.map((title) => (
           <h4 className="body-employee-title" key={title}>
             {title}
@@ -64,14 +66,14 @@ const Body = () => {
     <div className="body">
       <div className="body-flex-container">
         <div className="body-text">
-          <h2>Yritys</h2>
+          <h2 className="body-text-header">Yritys</h2>
           {bodyText}
         </div>
         <div className="body-text" id="body-services">
-          <h2>Palvelumme</h2>
+          <h2 className="body-text-header">Palvelumme</h2>
           <ul>{services}</ul>
         </div>
-        <h2 className="body-employees-title">Tekijät</h2>
+        <h2 className="body-employees-title body-text-header">Tekijät</h2>
         <div className="body-employees-flex-container">{employees}</div>
       </div>
       <Contact title={data.contactFormTitle} />

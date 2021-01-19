@@ -32,7 +32,11 @@ const SingleService = (props) => {
       return element.map((text, index) => {
         if (typeof text === "object" && text.isHeader) {
           return (
-            <h2 style={text.paddingTop && { paddingTop: 25 }} key={index}>
+            <h2
+              className="single-service-header"
+              style={text.paddingTop && { paddingTop: 25 }}
+              key={index}
+            >
               {text.header}
             </h2>
           );
@@ -67,7 +71,7 @@ const SingleService = (props) => {
 
   const detailCollection = (
     <div className="single-service-detail-collection">
-      <h3>{details.detailsTitle}</h3>
+      <h3 className="single-service-header">{details.detailsTitle}</h3>
       {links}
     </div>
   );
@@ -96,7 +100,7 @@ const SingleService = (props) => {
           )}
           <div className="single-service-inner-body-text-wrapper">
             <div className="single-service-inner-body-text">
-              <h2>{title}</h2>
+              <h2 className="single-service-header">{title}</h2>
               {singleServiceText}
               {details && detailCollection}
               <HyperLink path={"/"} text={"Palaa takaisin etusivulle"} />

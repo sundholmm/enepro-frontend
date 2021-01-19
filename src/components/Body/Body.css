@@ -4,8 +4,12 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 50px;
-  background: #000000;
-  color: #ffffff;
+  background: #0c0321;
+  color: #1fb2df;
+}
+
+.body-text-header {
+  color: #f8f8ff;
 }
 
 .body-flex-container > div,
@@ -56,7 +60,7 @@
 }
 
 .body-employee-div > a {
-  color: #ffffff;
+  color: #f8f8ff;
   text-decoration: none;
 }
 

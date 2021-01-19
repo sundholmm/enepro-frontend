@@ -5,11 +5,15 @@
   justify-content: center;
   padding: 50px 0px;
   background-color: black;
-  color: white;
+  color: #add7e4eb;
+}
+
+.single-service-additional-detail-header {
+  color: #f8f8ffc7;
 }
 
 .single-service-additional-details-inner-body {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgb(0 10 195 / 15%);
   word-break: break-word;
   width: 60vw;
   padding: 30px;

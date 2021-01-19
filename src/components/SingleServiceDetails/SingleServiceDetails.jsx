@@ -10,7 +10,11 @@ const SingleServiceDetails = (props) => {
 
   const detailCollection = details.map((detail, index) => (
     <div key={index} className="single-service-additional-detail">
-      {detail.title ? <h2>{detail.title}</h2> : null}
+      {detail.title ? (
+        <h2 className="single-service-additional-detail-header">
+          {detail.title}
+        </h2>
+      ) : null}
       {detail.image ? (
         <Picture
           alt={detail.image}
