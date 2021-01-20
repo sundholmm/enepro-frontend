@@ -19,11 +19,17 @@ const Contact = (props) => {
     event.preventDefault();
     if (emailValue) {
       axios
-        .post(process.env.REACT_APP_PRODUCTION_URL, {
-          email: emailValue,
-          phone: phoneValue,
-          text: textValue,
-        })
+        .post(
+          process.env.REACT_APP_PRODUCTION_URL,
+          {
+            email: emailValue,
+            phone: phoneValue,
+            text: textValue,
+          },
+          {
+            headers: { "Content-Type": "application/json" },
+          }
+        )
         .then((response) => {
           clearValues();
           setStatusValue("success");
