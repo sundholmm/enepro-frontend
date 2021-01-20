@@ -4,8 +4,8 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 50px;
-  background: #0c0321;
-  color: #1fb2df;
+  background-image: linear-gradient(#09094c, #00019f);
+  color: #f8f8ff;
 }
 
 .body-text-header {
@@ -19,6 +19,10 @@
 
 .body-text {
   margin: 50px 0px 50px 0px;
+}
+
+.body-text > p {
+  font-size: large;
 }
 
 .body-text > ul {
@@ -55,7 +59,7 @@
 }
 
 .body-employee-div {
-  padding: 10px 50px 50px 50px;
+  padding: 10px 100px 50px 100px;
   white-space: nowrap;
 }
 

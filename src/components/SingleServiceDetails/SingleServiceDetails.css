@@ -4,8 +4,8 @@
   align-items: center;
   justify-content: center;
   padding: 50px 0px;
-  background-color: black;
-  color: #add7e4eb;
+  background-color: #09094c;
+  color: #f8f8ff;
 }
 
 .single-service-additional-detail-header {
@@ -13,7 +13,7 @@
 }
 
 .single-service-additional-details-inner-body {
-  background-color: rgb(0 10 195 / 15%);
+  background-image: linear-gradient(#09094c, #00019f);
   word-break: break-word;
   width: 60vw;
   padding: 30px;

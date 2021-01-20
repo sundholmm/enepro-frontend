@@ -37,9 +37,11 @@ const Header = () => {
     <div
       className="header"
       style={{
-        backgroundImage: `url(${
+        background: `linear-gradient(rgba(0, 0, 0, 0), rgba(9, 9, 76, 0.1), rgb(9, 9, 76)) no-repeat, url(${
           support ? "/paneelikuva-high-res.webp" : "/paneelikuva-high-res.jpg"
         })`,
+        backgroundPosition: "center top",
+        backgroundSize: "cover",
       }}
     >
       <div className="header-flex-container">
