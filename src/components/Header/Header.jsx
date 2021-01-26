@@ -1,8 +1,8 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import data from "../../data/data.json";
 import HeaderLogo from "./HeaderLogo";
 import ScrollArrow from "../ScrollArrow/ScrollArrow";
-import useWebP from "./SupportWebP";
+import supportsWebP from "supports-webp";
 import "./Header.css";
 
 const Header = () => {
@@ -22,13 +22,23 @@ const Header = () => {
     });
   };
 
+  const [support, setSupport] = useState(true);
+
+  supportsWebP.then((supported) => {
+    if (supported) {
+      setSupport(true);
+    } else {
+      setSupport(false);
+    }
+  });
+
   return (
     // Use inline style meanwhile sass-loader is fixed
     <div
       className="header"
       style={{
         background: `linear-gradient(rgba(0, 0, 0, 0), rgba(9, 9, 76, 0.1), rgb(9, 9, 76)) no-repeat, url(${
-          useWebP ? "/paneelikuva-high-res.webp" : "/paneelikuva-high-res.jpg"
+          support ? "/paneelikuva-high-res.webp" : "/paneelikuva-high-res.jpg"
         })`,
         backgroundPosition: "center top",
         backgroundSize: "cover",
