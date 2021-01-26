@@ -1,8 +1,13 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowRight,
+  faBars,
+  faTimes,
+} from "@fortawesome/free-solid-svg-icons";
 import data from "../../data/data.json";
+import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import Header from "../Header/Header";
 import Body from "../Body/Body";
 import Footer from "../Footer/Footer";
@@ -18,9 +23,11 @@ const SingleServiceDetails = lazy(() =>
 );
 
 // Initialize FontAwesome library
-library.add(faArrowRight);
+library.add(faArrowRight, faBars, faTimes);
 
 const App = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const noMatch = (
     <Route path="*">
       <Suspense fallback={<Loader />}>
@@ -28,6 +35,11 @@ const App = () => {
       </Suspense>
     </Route>
   );
+
+  const links = data.services.map((service) => ({
+    path: service.path,
+    title: service.title,
+  }));
 
   const routes = data.services.map((service, index) => (
     <Route
@@ -38,12 +50,22 @@ const App = () => {
           <Switch>
             <Route path={`${url}/`} exact>
               <Suspense fallback={<Loader />}>
+                <BurgerMenu
+                  links={links}
+                  menuOpen={menuOpen}
+                  setMenuOpen={setMenuOpen}
+                />
                 <SingleService service={service} />
               </Suspense>
             </Route>
             {service.details.additionalDetails && (
               <Route path={`${url}/ratkaisuvaihtoehdot`} exact>
                 <Suspense fallback={<Loader />}>
+                  <BurgerMenu
+                    links={links}
+                    menuOpen={menuOpen}
+                    setMenuOpen={setMenuOpen}
+                  />
                   <SingleServiceDetails
                     details={service.details.additionalDetails}
                     path={service.path}
@@ -59,12 +81,18 @@ const App = () => {
       )}
     />
   ));
+
   return (
     <div className="App">
       <Router>
         <ScrollToTop />
         <Switch>
           <Route exact path={"/"}>
+            <BurgerMenu
+              links={links}
+              menuOpen={menuOpen}
+              setMenuOpen={setMenuOpen}
+            />
             <Header />
             <Body />
             <Footer />
