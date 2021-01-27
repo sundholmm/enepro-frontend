@@ -5,7 +5,7 @@ import HyperLink from "../HyperLink/HyperLink";
 import Picture from "../Picture/Picture";
 import "./Body.css";
 
-const Body = () => {
+const Body = ({ ReactGA }) => {
   const bodyText = data.body.map((paragraph, index) => (
     <p key={index}>{paragraph}</p>
   ));
@@ -76,7 +76,7 @@ const Body = () => {
         <h2 className="body-employees-title body-text-header">Tekijät</h2>
         <div className="body-employees-flex-container">{employees}</div>
       </div>
-      <Contact title={data.contactFormTitle} />
+      <Contact ReactGA={ReactGA} title={data.contactFormTitle} />
     </div>
   );
 };

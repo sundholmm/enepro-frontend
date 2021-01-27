@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import "./Contact.css";
 
-const Contact = (props) => {
+const Contact = ({ ReactGA, title }) => {
   const [emailValue, setEmailValue] = useState("");
   const [phoneValue, setPhoneValue] = useState("");
   const [textValue, setTextValue] = useState("");
@@ -34,6 +34,10 @@ const Contact = (props) => {
           clearValues();
           setStatusValue("success");
           console.log(response);
+          ReactGA.event({
+            category: "Form",
+            action: "Successfully submitted contact form",
+          });
         })
         .catch((error) => {
           clearValues();
@@ -48,8 +52,8 @@ const Contact = (props) => {
   return (
     <div className="contact-form-wrapper">
       <div className="contact-form-title-wrapper">
-        <h2 className="contact-form-title">{props.title[0]}</h2>
-        <h3 className="contact-form-title">{props.title[1]}</h3>
+        <h2 className="contact-form-title">{title[0]}</h2>
+        <h3 className="contact-form-title">{title[1]}</h3>
       </div>
       <div className="contact-form">
         <form onSubmit={onSubmitHandler} id="contact-form-element">

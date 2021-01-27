@@ -1,11 +1,13 @@
-import { lazy, Suspense, useState } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { lazy, Suspense, useState, useEffect } from "react";
+import { Router, Route, Switch } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faArrowRight,
   faBars,
   faTimes,
 } from "@fortawesome/free-solid-svg-icons";
+import ReactGA from "react-ga";
+import { createBrowserHistory } from "history";
 import data from "../../data/data.json";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import Header from "../Header/Header";
@@ -25,7 +27,24 @@ const SingleServiceDetails = lazy(() =>
 // Initialize FontAwesome library
 library.add(faArrowRight, faBars, faTimes);
 
+// Initialize Google Analytics
+ReactGA.initialize("UA-156893073-1", {
+  testMode: process.env.NODE_ENV === "development" ? true : false,
+});
+
+// Use custom history for recording
+const browserHistory = createBrowserHistory();
+
+// Listen on page changes and record them
+browserHistory.listen((location) => {
+  ReactGA.pageview(location.pathname);
+});
+
 const App = () => {
+  // Record the first page load
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
   const [menuOpen, setMenuOpen] = useState(false);
 
   const noMatch = (
@@ -84,7 +103,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Router>
+      <Router history={browserHistory}>
         <ScrollToTop />
         <Switch>
           <Route exact path={"/"}>
@@ -94,7 +113,7 @@ const App = () => {
               setMenuOpen={setMenuOpen}
             />
             <Header />
-            <Body />
+            <Body ReactGA={ReactGA} />
             <Footer />
           </Route>
           {routes}
