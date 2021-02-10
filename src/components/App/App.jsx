@@ -47,18 +47,23 @@ const App = () => {
   }, []);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const noMatch = (
-    <Route path="*">
-      <Suspense fallback={<Loader />}>
-        <NoMatch noMatch={data.noMatch} />
-      </Suspense>
-    </Route>
-  );
-
   const links = data.services.map((service) => ({
     path: service.path,
     title: service.title,
   }));
+
+  const noMatch = (
+    <Route path="*">
+      <Suspense fallback={<Loader />}>
+        <BurgerMenu
+          links={links}
+          menuOpen={menuOpen}
+          setMenuOpen={setMenuOpen}
+        />
+        <NoMatch noMatch={data.noMatch} />
+      </Suspense>
+    </Route>
+  );
 
   const routes = data.services.map((service, index) => (
     <Route

@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-flex-container">
-        <div>
+        <>
           <a
             href="https://www.scanoffice.fi/tuoteryhma/ilmalampopumput/"
             target="_blank"
@@ -25,8 +25,22 @@ const Footer = () => {
               height="150px"
             />
           </a>
-        </div>
-        <div>
+        </>
+        <>
+          <a
+            href="https://www.scanoffice.fi/jalleenmyyjat/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Picture
+              className="footer-img footer-img-shallow"
+              alt="Scanoffice Energiapartneri"
+              img={{ name: "so-energiapartneri-logo", format: ".png" }}
+              height="150px"
+            />
+          </a>
+        </>
+        <>
           <a
             href="https://www.asiakastieto.fi/yritykset/fi/enepro-oy/30029787/yleiskuva"
             target="_blank"
@@ -39,8 +53,8 @@ const Footer = () => {
               height="150px"
             />
           </a>
-        </div>
-        <div>
+        </>
+        <>
           <a
             href="https://www.scanoffice.fi/tuoteryhma/aurinkosahkojarjestelmat/"
             target="_blank"
@@ -53,8 +67,8 @@ const Footer = () => {
               height="150px"
             />
           </a>
-        </div>
-        <div>
+        </>
+        <>
           <a
             href="https://www.scanoffice.fi/tuoteryhma/ilmalampopumput/"
             target="_blank"
@@ -67,7 +81,7 @@ const Footer = () => {
               height="150px"
             />
           </a>
-        </div>
+        </>
       </div>
       <div className="footer-address">{contact}</div>
       <p className="footer-copyright">

@@ -232,7 +232,8 @@
         "detailLinks": [
           "https://www.motiva.fi/koti_ja_asuminen/taloyhtiot/taloyhtion_energiatarkastus"
         ]
-      }
+      },
+      "image": { "name": "energiatarkastus", "format": ".png" }
     },
     {
       "title": "Aurinkovoimalat ja aurinkosähköjärjestelmät",
