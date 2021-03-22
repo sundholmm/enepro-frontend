@@ -84,7 +84,7 @@ const Contact = ({ ReactGA, title }) => {
                 id="contact-form-input-number"
                 className="contact-form-input-number"
                 type="tel"
-                placeholder="+358 44 1234567"
+                placeholder="0441234567"
                 onChange={(event) => setPhoneValue(event.target.value)}
               />
             </div>
